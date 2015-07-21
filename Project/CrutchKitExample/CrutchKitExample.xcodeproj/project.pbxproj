@@ -14,7 +14,6 @@
 		DD70C0991B1DB68A0096AE1B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD70C0981B1DB68A0096AE1B /* Images.xcassets */; };
 		DD70C09C1B1DB68A0096AE1B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD70C09A1B1DB68A0096AE1B /* LaunchScreen.xib */; };
 		DD70C0A81B1DB68A0096AE1B /* CrutchKitExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DD70C0A71B1DB68A0096AE1B /* CrutchKitExampleTests.m */; };
-		DD8C06CA1B28DB0000CAD71A /* CDObserversProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = DD8C06A81B28DB0000CAD71A /* CDObserversProxy.m */; };
 		DD8C06CB1B28DB0000CAD71A /* CDProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = DD8C06AC1B28DB0000CAD71A /* CDProtocol.m */; };
 		DD8C06CC1B28DB0000CAD71A /* CDSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = DD8C06AF1B28DB0000CAD71A /* CDSelector.m */; };
 		DD8C06CD1B28DB0000CAD71A /* CDDebugger.m in Sources */ = {isa = PBXBuildFile; fileRef = DD8C06B21B28DB0000CAD71A /* CDDebugger.m */; };
@@ -28,6 +27,7 @@
 		DD8C06D51B28DB0000CAD71A /* UIImage+CDScale.m in Sources */ = {isa = PBXBuildFile; fileRef = DD8C06C61B28DB0000CAD71A /* UIImage+CDScale.m */; };
 		DD8C06D61B28DB0000CAD71A /* UIResponder+CDExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = DD8C06C91B28DB0000CAD71A /* UIResponder+CDExtension.m */; };
 		DD9422DC1B5D54F000DC24A8 /* UIView+CDCompletion.m in Sources */ = {isa = PBXBuildFile; fileRef = DD9422DB1B5D54F000DC24A8 /* UIView+CDCompletion.m */; };
+		DD9422E31B5E3EC400DC24A8 /* CDObserversProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = DD9422E11B5E3EC400DC24A8 /* CDObserversProxy.m */; };
 		DDE687F91B24501E00210914 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDE687F81B24501E00210914 /* TableViewController.m */; };
 		DDE688061B246A5400210914 /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DDE688051B246A5400210914 /* TableViewCell.m */; };
 /* End PBXBuildFile section */
@@ -56,9 +56,6 @@
 		DD70C0A11B1DB68A0096AE1B /* CrutchKitExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CrutchKitExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD70C0A61B1DB68A0096AE1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DD70C0A71B1DB68A0096AE1B /* CrutchKitExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CrutchKitExampleTests.m; sourceTree = "<group>"; };
-		DD8C06A71B28DB0000CAD71A /* CDObserversProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDObserversProxy.h; sourceTree = "<group>"; };
-		DD8C06A81B28DB0000CAD71A /* CDObserversProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDObserversProxy.m; sourceTree = "<group>"; };
-		DD8C06A91B28DB0000CAD71A /* CDProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDProxy.h; sourceTree = "<group>"; };
 		DD8C06AB1B28DB0000CAD71A /* CDProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDProtocol.h; sourceTree = "<group>"; };
 		DD8C06AC1B28DB0000CAD71A /* CDProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDProtocol.m; sourceTree = "<group>"; };
 		DD8C06AE1B28DB0000CAD71A /* CDSelector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDSelector.h; sourceTree = "<group>"; };
@@ -86,6 +83,9 @@
 		DD9422DA1B5D54F000DC24A8 /* UIView+CDCompletion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+CDCompletion.h"; sourceTree = "<group>"; };
 		DD9422DB1B5D54F000DC24A8 /* UIView+CDCompletion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+CDCompletion.m"; sourceTree = "<group>"; };
 		DD9422DE1B5D55A500DC24A8 /* CDTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDTypes.h; sourceTree = "<group>"; };
+		DD9422E01B5E3EC400DC24A8 /* CDObserversProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDObserversProxy.h; sourceTree = "<group>"; };
+		DD9422E11B5E3EC400DC24A8 /* CDObserversProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDObserversProxy.m; sourceTree = "<group>"; };
+		DD9422E21B5E3EC400DC24A8 /* CDProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDProxy.h; sourceTree = "<group>"; };
 		DDE687F71B24501E00210914 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
 		DDE687F81B24501E00210914 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 		DDE688041B246A5400210914 /* TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
@@ -177,9 +177,9 @@
 		DD8C06A51B28DB0000CAD71A /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				DD9422DF1B5E3EC400DC24A8 /* CDProxy */,
 				DD9422DD1B5D557000DC24A8 /* CDTypes */,
 				DD9422D91B5D549E00DC24A8 /* UIView+CDCompletion */,
-				DD8C06A61B28DB0000CAD71A /*  CDProxy */,
 				DD8C06AA1B28DB0000CAD71A /* CDProtocol */,
 				DD8C06AD1B28DB0000CAD71A /* CDSelector */,
 				DD8C06B01B28DB0000CAD71A /* Debug */,
@@ -191,16 +191,6 @@
 			);
 			name = Classes;
 			path = ../../../Classes;
-			sourceTree = "<group>";
-		};
-		DD8C06A61B28DB0000CAD71A /*  CDProxy */ = {
-			isa = PBXGroup;
-			children = (
-				DD8C06A91B28DB0000CAD71A /* CDProxy.h */,
-				DD8C06A71B28DB0000CAD71A /* CDObserversProxy.h */,
-				DD8C06A81B28DB0000CAD71A /* CDObserversProxy.m */,
-			);
-			path = " CDProxy";
 			sourceTree = "<group>";
 		};
 		DD8C06AA1B28DB0000CAD71A /* CDProtocol */ = {
@@ -298,6 +288,16 @@
 				DD9422DE1B5D55A500DC24A8 /* CDTypes.h */,
 			);
 			name = CDTypes;
+			sourceTree = "<group>";
+		};
+		DD9422DF1B5E3EC400DC24A8 /* CDProxy */ = {
+			isa = PBXGroup;
+			children = (
+				DD9422E01B5E3EC400DC24A8 /* CDObserversProxy.h */,
+				DD9422E11B5E3EC400DC24A8 /* CDObserversProxy.m */,
+				DD9422E21B5E3EC400DC24A8 /* CDProxy.h */,
+			);
+			path = CDProxy;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -406,6 +406,7 @@
 				DD8C06D31B28DB0000CAD71A /* UIImage+CDCrop.m in Sources */,
 				DD8C06CB1B28DB0000CAD71A /* CDProtocol.m in Sources */,
 				DD8C06D21B28DB0000CAD71A /* UIImage+CDCreate.m in Sources */,
+				DD9422E31B5E3EC400DC24A8 /* CDObserversProxy.m in Sources */,
 				DD8C06D41B28DB0000CAD71A /* UIImage+CDPainted.m in Sources */,
 				DD8C06D51B28DB0000CAD71A /* UIImage+CDScale.m in Sources */,
 				DDE687F91B24501E00210914 /* TableViewController.m in Sources */,
@@ -413,7 +414,6 @@
 				DD8C06CD1B28DB0000CAD71A /* CDDebugger.m in Sources */,
 				DD8C06CF1B28DB0000CAD71A /* UIApplication+CDProxy.m in Sources */,
 				DD9422DC1B5D54F000DC24A8 /* UIView+CDCompletion.m in Sources */,
-				DD8C06CA1B28DB0000CAD71A /* CDObserversProxy.m in Sources */,
 				DD70C08E1B1DB68A0096AE1B /* main.m in Sources */,
 				DD8C06D11B28DB0000CAD71A /* UIImage+CDCompare.m in Sources */,
 				DD8C06D61B28DB0000CAD71A /* UIResponder+CDExtension.m in Sources */,

@@ -10,7 +10,7 @@
 
 @protocol CDProxy <NSObject>
 
-- (BOOL)respondsToSelecotor:(SEL)selector
+- (BOOL)respondsToSelector:(SEL)selector
               fromProtocol:(Protocol *)protocol
                 fromSender:(id)sender;
 

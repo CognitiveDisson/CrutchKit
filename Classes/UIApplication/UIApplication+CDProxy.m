@@ -22,7 +22,7 @@
         
         id<CDProxy> proxy = responder.proxy;
         
-        if (proxy && [proxy respondsToSelecotor:selector fromProtocol:protocol fromSender:sender]) {
+        if (proxy && [proxy respondsToSelector:selector fromProtocol:protocol fromSender:sender]) {
             return proxy;
         }
         

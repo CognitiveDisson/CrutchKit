@@ -67,4 +67,8 @@
     self.navigationController.navigationBar.barTintColor = [UIColor randomColor];
 }
 
+- (void)didSwitch:(UISwitch *)sender {
+    self.view.backgroundColor = sender.isOn ? [UIColor redColor] : [UIColor whiteColor];
+}
+
 @end

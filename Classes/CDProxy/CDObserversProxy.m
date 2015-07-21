@@ -49,7 +49,7 @@
                                 observers:observers];
 }
 
-- (BOOL)respondsToSelecotor:(SEL)selector
+- (BOOL)respondsToSelector:(SEL)selector
               fromProtocol:(Protocol *)protocol
                 fromSender:(id)sender {
     return [CDProtocol protocol:self.proxyProtocol isConformsToProtocol:protocol];

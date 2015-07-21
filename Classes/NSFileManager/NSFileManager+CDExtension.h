@@ -10,4 +10,8 @@
 
 @interface NSFileManager (CDExtension)
 
+- (NSUInteger)fileSizeAtPath:(NSString *)filePath;
+
+- (NSUInteger)folderSizeAtPath:(NSString *)folderPath;
+
 @end

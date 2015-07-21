@@ -27,6 +27,7 @@
 		DD8C06D41B28DB0000CAD71A /* UIImage+CDPainted.m in Sources */ = {isa = PBXBuildFile; fileRef = DD8C06C41B28DB0000CAD71A /* UIImage+CDPainted.m */; };
 		DD8C06D51B28DB0000CAD71A /* UIImage+CDScale.m in Sources */ = {isa = PBXBuildFile; fileRef = DD8C06C61B28DB0000CAD71A /* UIImage+CDScale.m */; };
 		DD8C06D61B28DB0000CAD71A /* UIResponder+CDExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = DD8C06C91B28DB0000CAD71A /* UIResponder+CDExtension.m */; };
+		DD9422DC1B5D54F000DC24A8 /* UIView+CDCompletion.m in Sources */ = {isa = PBXBuildFile; fileRef = DD9422DB1B5D54F000DC24A8 /* UIView+CDCompletion.m */; };
 		DDE687F91B24501E00210914 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDE687F81B24501E00210914 /* TableViewController.m */; };
 		DDE688061B246A5400210914 /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DDE688051B246A5400210914 /* TableViewCell.m */; };
 /* End PBXBuildFile section */
@@ -82,6 +83,9 @@
 		DD8C06C61B28DB0000CAD71A /* UIImage+CDScale.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+CDScale.m"; sourceTree = "<group>"; };
 		DD8C06C81B28DB0000CAD71A /* UIResponder+CDExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIResponder+CDExtension.h"; sourceTree = "<group>"; };
 		DD8C06C91B28DB0000CAD71A /* UIResponder+CDExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIResponder+CDExtension.m"; sourceTree = "<group>"; };
+		DD9422DA1B5D54F000DC24A8 /* UIView+CDCompletion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+CDCompletion.h"; sourceTree = "<group>"; };
+		DD9422DB1B5D54F000DC24A8 /* UIView+CDCompletion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+CDCompletion.m"; sourceTree = "<group>"; };
+		DD9422DE1B5D55A500DC24A8 /* CDTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDTypes.h; sourceTree = "<group>"; };
 		DDE687F71B24501E00210914 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
 		DDE687F81B24501E00210914 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 		DDE688041B246A5400210914 /* TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
@@ -173,6 +177,8 @@
 		DD8C06A51B28DB0000CAD71A /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				DD9422DD1B5D557000DC24A8 /* CDTypes */,
+				DD9422D91B5D549E00DC24A8 /* UIView+CDCompletion */,
 				DD8C06A61B28DB0000CAD71A /*  CDProxy */,
 				DD8C06AA1B28DB0000CAD71A /* CDProtocol */,
 				DD8C06AD1B28DB0000CAD71A /* CDSelector */,
@@ -275,6 +281,23 @@
 				DD8C06C91B28DB0000CAD71A /* UIResponder+CDExtension.m */,
 			);
 			path = UIResponder;
+			sourceTree = "<group>";
+		};
+		DD9422D91B5D549E00DC24A8 /* UIView+CDCompletion */ = {
+			isa = PBXGroup;
+			children = (
+				DD9422DA1B5D54F000DC24A8 /* UIView+CDCompletion.h */,
+				DD9422DB1B5D54F000DC24A8 /* UIView+CDCompletion.m */,
+			);
+			name = "UIView+CDCompletion";
+			sourceTree = "<group>";
+		};
+		DD9422DD1B5D557000DC24A8 /* CDTypes */ = {
+			isa = PBXGroup;
+			children = (
+				DD9422DE1B5D55A500DC24A8 /* CDTypes.h */,
+			);
+			name = CDTypes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -389,6 +412,7 @@
 				DD70C0911B1DB68A0096AE1B /* AppDelegate.m in Sources */,
 				DD8C06CD1B28DB0000CAD71A /* CDDebugger.m in Sources */,
 				DD8C06CF1B28DB0000CAD71A /* UIApplication+CDProxy.m in Sources */,
+				DD9422DC1B5D54F000DC24A8 /* UIView+CDCompletion.m in Sources */,
 				DD8C06CA1B28DB0000CAD71A /* CDObserversProxy.m in Sources */,
 				DD70C08E1B1DB68A0096AE1B /* main.m in Sources */,
 				DD8C06D11B28DB0000CAD71A /* UIImage+CDCompare.m in Sources */,

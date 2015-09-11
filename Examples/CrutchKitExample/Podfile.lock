@@ -1,0 +1,26 @@
+PODS:
+  - CrutchKit (0.0.2):
+    - CrutchKit/AnimationHandling (= 0.0.2)
+    - CrutchKit/Debug (= 0.0.2)
+    - CrutchKit/Helpers (= 0.0.2)
+    - CrutchKit/Proxying (= 0.0.2)
+    - CrutchKit/Runtime (= 0.0.2)
+  - CrutchKit/AnimationHandling (0.0.2):
+    - CrutchKit/Helpers
+  - CrutchKit/Debug (0.0.2)
+  - CrutchKit/Helpers (0.0.2)
+  - CrutchKit/Proxying (0.0.2):
+    - CrutchKit/Runtime
+  - CrutchKit/Runtime (0.0.2)
+
+DEPENDENCIES:
+  - CrutchKit (from `../../`)
+
+EXTERNAL SOURCES:
+  CrutchKit:
+    :path: ../../
+
+SPEC CHECKSUMS:
+  CrutchKit: 01a88ebd2667dd0b947854e369824ff831c04e5c
+
+COCOAPODS: 0.37.1

@@ -1,0 +1,10 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+target 'CrutchKitExample' do
+	pod "CrutchKit", :path => "../../"
+end
+
+target 'CrutchKitExampleTests' do
+	pod "CrutchKit", :path => "../../"
+end
+

@@ -1,0 +1,1049 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0CC7F319B005DBF3B4A06063 /* UIApplication+CDProxying.m in Sources */ = {isa = PBXBuildFile; fileRef = 0273D9F3A4FF7BEF5D587737 /* UIApplication+CDProxying.m */; };
+		10689E2AEA08D01AA8EC36C9 /* NSFileManager+CDSize.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B669B62EBCA20C4D5C56C45 /* NSFileManager+CDSize.h */; };
+		10C61DE473DD49A60B7E4C33 /* CDTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 73978D798476ADC1690CE465 /* CDTypes.h */; };
+		16F36C4BD6028D3E53CE9FCB /* UIView+CDCompletion.m in Sources */ = {isa = PBXBuildFile; fileRef = 91F57AC842728706D720F10A /* UIView+CDCompletion.m */; };
+		1938A56C4489DDCD05C3F930 /* UIImage+CDCompare.h in Headers */ = {isa = PBXBuildFile; fileRef = EA83468805B5BC5091A53B49 /* UIImage+CDCompare.h */; };
+		1944E2D88E1CC576AFB3222B /* CDObserversProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 7932882CA8EFF777B6A7A46B /* CDObserversProxy.h */; };
+		1AA8E27C900374B1C816AD64 /* UIImage+CDCompare.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EE68248C1853429DEC7A0FF /* UIImage+CDCompare.m */; };
+		1E9384BFE14B38F293589A6C /* CDObserversProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A74D63EE77CECC97180EC53 /* CDObserversProxy.m */; };
+		1F8B2B76B11B79032B23B4B1 /* NSFileManager+CDSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 104BFF4138F2DB10FB849F43 /* NSFileManager+CDSize.m */; };
+		225A86B13AF1CBA7B3C92CA4 /* CDDebugger.m in Sources */ = {isa = PBXBuildFile; fileRef = 7660C3FA29191A7B95EA73F2 /* CDDebugger.m */; };
+		278B5E38598E1642E1BBE6E3 /* UIImage+CDCompare.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EE68248C1853429DEC7A0FF /* UIImage+CDCompare.m */; };
+		2A7167CA712C71FCE282791B /* UIViewController+CDObserver.h in Headers */ = {isa = PBXBuildFile; fileRef = FD14645CB6AEB587C0B5AC43 /* UIViewController+CDObserver.h */; };
+		2A9238E68B2C53921C61B4BA /* Pods-CrutchKitExampleTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B0D0EEDCCC1FAA319FE762D1 /* Pods-CrutchKitExampleTests-dummy.m */; };
+		2BB845ACCE629C5BE22FD280 /* Pods-CrutchKitExampleTests-CrutchKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CE64F3BCA04C4E2DC0A3CCD8 /* Pods-CrutchKitExampleTests-CrutchKit-dummy.m */; };
+		2C58F89AC11ACF119B615EE9 /* UIImage+CDCreate.h in Headers */ = {isa = PBXBuildFile; fileRef = 04A97FCB78380235B10B9548 /* UIImage+CDCreate.h */; };
+		2E6A2CE237265A1DCBC1B59B /* UIImage+CDCrop.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E2AE1823670FD2EC0EC0237 /* UIImage+CDCrop.h */; };
+		301E9EFA84BA35219080CEF9 /* UIImage+CDCrop.m in Sources */ = {isa = PBXBuildFile; fileRef = 88EF20A019DDE3FD65AF1D73 /* UIImage+CDCrop.m */; };
+		318091E48D92B27A2F959731 /* Pods-CrutchKitExample-CrutchKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0DF29838E1EB7A138CC2A7 /* Pods-CrutchKitExample-CrutchKit-dummy.m */; };
+		3300BFB6DF1BCFAAF53BAA84 /* UIColor+CDExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = F2CB1979D1BD033755DD20CE /* UIColor+CDExtension.h */; };
+		3430F91CC87FF70124B99A37 /* UIColor+CDExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = F2CB1979D1BD033755DD20CE /* UIColor+CDExtension.h */; };
+		34AE88DB515C372A2477590C /* CDProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = F83F3E0834AC2CFC1A3CE2F1 /* CDProtocol.m */; };
+		37005F31FC92D88A5471F362 /* CDProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 43C0F8DCB652179A83BEE975 /* CDProxy.h */; };
+		40AE64A8F2136E122F17AD1D /* CDObserversProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 7932882CA8EFF777B6A7A46B /* CDObserversProxy.h */; };
+		4260662047CA12258C168E89 /* UIViewController+CDObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = E37125BC167551BF82CD51D3 /* UIViewController+CDObserver.m */; };
+		448C044A5D8C4180569FC23B /* CDProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C1E379FA71F9FC1FBB14A64 /* CDProtocol.h */; };
+		46A1384FA44B62574420C571 /* UIImage+CDScale.h in Headers */ = {isa = PBXBuildFile; fileRef = 84B775F441D966B10ACECCCD /* UIImage+CDScale.h */; };
+		4C5BD98ADBD13D91BFBB45E8 /* CDDebugger.m in Sources */ = {isa = PBXBuildFile; fileRef = 7660C3FA29191A7B95EA73F2 /* CDDebugger.m */; };
+		4C9769B19D42F204DBD906D0 /* UIImage+CDPainted.h in Headers */ = {isa = PBXBuildFile; fileRef = 527EE9031EE437FD3F83B911 /* UIImage+CDPainted.h */; };
+		56200CC72E367D2537CB395A /* NSFileManager+CDSize.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B669B62EBCA20C4D5C56C45 /* NSFileManager+CDSize.h */; };
+		62C64998744209AC1E81EC64 /* CDSelector.h in Headers */ = {isa = PBXBuildFile; fileRef = 944BDD003FBA93B310B056D4 /* CDSelector.h */; };
+		6771BB94A7F504D952F8D5E8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7B0FF5D8C2C8A3D31134A6C /* Foundation.framework */; };
+		69CE94C36693E4E54C5AE92C /* UIApplication+CDProxying.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A4DE460EA29E182DA6CADB0 /* UIApplication+CDProxying.h */; };
+		6DAE2F67EA490289AB343AFA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7B0FF5D8C2C8A3D31134A6C /* Foundation.framework */; };
+		70B090E8ECF2E09613462151 /* UIApplication+CDProxying.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A4DE460EA29E182DA6CADB0 /* UIApplication+CDProxying.h */; };
+		7721BBE0C9812D2F226712EE /* UIResponder+CDProxying.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F36FC34AE7069A8D2903508 /* UIResponder+CDProxying.m */; };
+		79A8F038AA370255AC3F6B2F /* UIApplication+CDProxying.m in Sources */ = {isa = PBXBuildFile; fileRef = 0273D9F3A4FF7BEF5D587737 /* UIApplication+CDProxying.m */; };
+		7B5681AE99C34EF140265DB2 /* UIImage+CDPainted.h in Headers */ = {isa = PBXBuildFile; fileRef = 527EE9031EE437FD3F83B911 /* UIImage+CDPainted.h */; };
+		7BD05035D374DDF06D172509 /* UIView+CDCompletion.h in Headers */ = {isa = PBXBuildFile; fileRef = 9BC95D79C6E53C5CEE81B2B5 /* UIView+CDCompletion.h */; };
+		7EAA7FB98F78C467B90BD591 /* UIView+CDCompletion.m in Sources */ = {isa = PBXBuildFile; fileRef = 91F57AC842728706D720F10A /* UIView+CDCompletion.m */; };
+		82B92A6CFC9C56B92B02DA8E /* CDSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D31004226942E5157FE9D09 /* CDSelector.m */; };
+		873FE997F3A7E06CE1AD03B2 /* UIImage+CDCrop.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E2AE1823670FD2EC0EC0237 /* UIImage+CDCrop.h */; };
+		91C29F77E46B3187389AA90D /* UIImage+CDCrop.m in Sources */ = {isa = PBXBuildFile; fileRef = 88EF20A019DDE3FD65AF1D73 /* UIImage+CDCrop.m */; };
+		948A72191DFA16E1D07AACA0 /* UIImage+CDScale.m in Sources */ = {isa = PBXBuildFile; fileRef = 6022A0F71180957511A1BE28 /* UIImage+CDScale.m */; };
+		972A0B6220DC9E96313B25C0 /* UIResponder+CDProxying.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F36FC34AE7069A8D2903508 /* UIResponder+CDProxying.m */; };
+		99D81348A3D687B8106F6023 /* UIView+CDCompletion.h in Headers */ = {isa = PBXBuildFile; fileRef = 9BC95D79C6E53C5CEE81B2B5 /* UIView+CDCompletion.h */; };
+		9E521AE4F7232BA4456F2F5E /* CDObserversProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A74D63EE77CECC97180EC53 /* CDObserversProxy.m */; };
+		9FE18FF07005BFE6479802F0 /* UIImage+CDCompare.h in Headers */ = {isa = PBXBuildFile; fileRef = EA83468805B5BC5091A53B49 /* UIImage+CDCompare.h */; };
+		A080753870550A1C1D41D75A /* Pods-CrutchKitExample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D5619DD797ED2CFE5741379B /* Pods-CrutchKitExample-dummy.m */; };
+		A537B9B7BAF2B52809478C6E /* UIViewController+CDObserver.h in Headers */ = {isa = PBXBuildFile; fileRef = FD14645CB6AEB587C0B5AC43 /* UIViewController+CDObserver.h */; };
+		A6CF1294E952689E0CFC9593 /* UIImage+CDCreate.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2D3B6B10405CE79B322F87 /* UIImage+CDCreate.m */; };
+		AF0759CBDB07A1E380C6A0B1 /* UIImage+CDPainted.m in Sources */ = {isa = PBXBuildFile; fileRef = 631CFB510BC2A68AB6947C93 /* UIImage+CDPainted.m */; };
+		B5ACD038F11FBBFC682A346F /* CDDebugger.h in Headers */ = {isa = PBXBuildFile; fileRef = CA1E176DEDC78589B88BCEAC /* CDDebugger.h */; };
+		BDEDC9DE37DFFE1EA310CFAC /* UIResponder+CDProxying.h in Headers */ = {isa = PBXBuildFile; fileRef = 4ED8A80C829834D2D4480F46 /* UIResponder+CDProxying.h */; };
+		C2154CB814F8C76888881928 /* CDProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C1E379FA71F9FC1FBB14A64 /* CDProtocol.h */; };
+		C3CB0B27C61B8F156DDB9C92 /* CDSelector.h in Headers */ = {isa = PBXBuildFile; fileRef = 944BDD003FBA93B310B056D4 /* CDSelector.h */; };
+		C3FDB968F0FA6C74C1F96213 /* CDProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 43C0F8DCB652179A83BEE975 /* CDProxy.h */; };
+		C7A74B6A9A5625FA05705B11 /* NSFileManager+CDSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 104BFF4138F2DB10FB849F43 /* NSFileManager+CDSize.m */; };
+		CAC288D9690EE3C510F76EC8 /* CDTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 73978D798476ADC1690CE465 /* CDTypes.h */; };
+		CCC21952E36DB91B55B7E2E9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7B0FF5D8C2C8A3D31134A6C /* Foundation.framework */; };
+		CDBEC98053E4F3A79DF455E1 /* UIImage+CDScale.h in Headers */ = {isa = PBXBuildFile; fileRef = 84B775F441D966B10ACECCCD /* UIImage+CDScale.h */; };
+		CE143B68A0834A6F0A7D7697 /* UIImage+CDPainted.m in Sources */ = {isa = PBXBuildFile; fileRef = 631CFB510BC2A68AB6947C93 /* UIImage+CDPainted.m */; };
+		D064A259571B07452E462935 /* CDSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D31004226942E5157FE9D09 /* CDSelector.m */; };
+		D374168A5696AB31B4AF6E1A /* CDDebugger.h in Headers */ = {isa = PBXBuildFile; fileRef = CA1E176DEDC78589B88BCEAC /* CDDebugger.h */; };
+		D40B83008A13F2AC1F3EC92E /* UIResponder+CDProxying.h in Headers */ = {isa = PBXBuildFile; fileRef = 4ED8A80C829834D2D4480F46 /* UIResponder+CDProxying.h */; };
+		DB2D0763D1B3EE031BE7E74D /* CDProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = F83F3E0834AC2CFC1A3CE2F1 /* CDProtocol.m */; };
+		DEFC0A506522572136B554A1 /* UIImage+CDCreate.h in Headers */ = {isa = PBXBuildFile; fileRef = 04A97FCB78380235B10B9548 /* UIImage+CDCreate.h */; };
+		E08DC5BDD183FFED00C17155 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7B0FF5D8C2C8A3D31134A6C /* Foundation.framework */; };
+		E1A59584C0891DA6DDA6082B /* UIViewController+CDObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = E37125BC167551BF82CD51D3 /* UIViewController+CDObserver.m */; };
+		E89EB5D4D379F7D40DD6FEFD /* UIImage+CDCreate.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2D3B6B10405CE79B322F87 /* UIImage+CDCreate.m */; };
+		F4CC87AA6A480AA01D192160 /* UIColor+CDExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 863B8286BE533FA6A5EA8CBB /* UIColor+CDExtension.m */; };
+		FD1C898E1BD23C98A24B0623 /* UIColor+CDExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 863B8286BE533FA6A5EA8CBB /* UIColor+CDExtension.m */; };
+		FE485D6C9E4C821EDD7A098C /* UIImage+CDScale.m in Sources */ = {isa = PBXBuildFile; fileRef = 6022A0F71180957511A1BE28 /* UIImage+CDScale.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		67FD72F21BA637F2FB491F9B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5E4C086B3FC93014D8E636E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AEAEADDC8029E62F27FB28D6;
+			remoteInfo = "Pods-CrutchKitExampleTests-CrutchKit";
+		};
+		FEE530CA551034C2A9143051 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5E4C086B3FC93014D8E636E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A15990FDF562D448FC8B87A9;
+			remoteInfo = "Pods-CrutchKitExample-CrutchKit";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0273D9F3A4FF7BEF5D587737 /* UIApplication+CDProxying.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+CDProxying.m"; sourceTree = "<group>"; };
+		04A97FCB78380235B10B9548 /* UIImage+CDCreate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIImage+CDCreate.h"; sourceTree = "<group>"; };
+		0677C3F403B19E3DE6C6D4D8 /* Pods-CrutchKitExample-CrutchKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CrutchKitExample-CrutchKit.xcconfig"; sourceTree = "<group>"; };
+		0A74D63EE77CECC97180EC53 /* CDObserversProxy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CDObserversProxy.m; sourceTree = "<group>"; };
+		0E2AE1823670FD2EC0EC0237 /* UIImage+CDCrop.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIImage+CDCrop.h"; sourceTree = "<group>"; };
+		104BFF4138F2DB10FB849F43 /* NSFileManager+CDSize.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+CDSize.m"; sourceTree = "<group>"; };
+		1A54FA8A9C6A01425A5F3F9D /* Pods-CrutchKitExample-CrutchKit-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CrutchKitExample-CrutchKit-Private.xcconfig"; sourceTree = "<group>"; };
+		1C1E379FA71F9FC1FBB14A64 /* CDProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CDProtocol.h; sourceTree = "<group>"; };
+		1FC719130B396B88A17BC000 /* Pods-CrutchKitExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CrutchKitExample.debug.xcconfig"; sourceTree = "<group>"; };
+		2E1B4048DC951D3E682D850D /* Pods-CrutchKitExampleTests-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CrutchKitExampleTests-environment.h"; sourceTree = "<group>"; };
+		43C0F8DCB652179A83BEE975 /* CDProxy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CDProxy.h; sourceTree = "<group>"; };
+		4A4DE460EA29E182DA6CADB0 /* UIApplication+CDProxying.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIApplication+CDProxying.h"; sourceTree = "<group>"; };
+		4ED8A80C829834D2D4480F46 /* UIResponder+CDProxying.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIResponder+CDProxying.h"; sourceTree = "<group>"; };
+		527EE9031EE437FD3F83B911 /* UIImage+CDPainted.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIImage+CDPainted.h"; sourceTree = "<group>"; };
+		591A4C82475763675ACDDA8D /* Pods-CrutchKitExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CrutchKitExample.release.xcconfig"; sourceTree = "<group>"; };
+		59AB8ED90C94703894605C61 /* Pods-CrutchKitExample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CrutchKitExample-acknowledgements.markdown"; sourceTree = "<group>"; };
+		5EE68248C1853429DEC7A0FF /* UIImage+CDCompare.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIImage+CDCompare.m"; sourceTree = "<group>"; };
+		5F36FC34AE7069A8D2903508 /* UIResponder+CDProxying.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIResponder+CDProxying.m"; sourceTree = "<group>"; };
+		6022A0F71180957511A1BE28 /* UIImage+CDScale.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIImage+CDScale.m"; sourceTree = "<group>"; };
+		631CFB510BC2A68AB6947C93 /* UIImage+CDPainted.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIImage+CDPainted.m"; sourceTree = "<group>"; };
+		6642CF8A42DD286AFDC5FB63 /* libPods-CrutchKitExample-CrutchKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CrutchKitExample-CrutchKit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A497873FAFB03C92F3C6EA9 /* Pods-CrutchKitExample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CrutchKitExample-acknowledgements.plist"; sourceTree = "<group>"; };
+		6C22C2F397FC9142F3765422 /* Pods-CrutchKitExampleTests-CrutchKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-CrutchKitExampleTests-CrutchKit-prefix.pch"; path = "../Pods-CrutchKitExampleTests-CrutchKit/Pods-CrutchKitExampleTests-CrutchKit-prefix.pch"; sourceTree = "<group>"; };
+		6D31004226942E5157FE9D09 /* CDSelector.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CDSelector.m; sourceTree = "<group>"; };
+		73978D798476ADC1690CE465 /* CDTypes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CDTypes.h; sourceTree = "<group>"; };
+		7660C3FA29191A7B95EA73F2 /* CDDebugger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CDDebugger.m; sourceTree = "<group>"; };
+		7718FEACFEC76DF89DD7D564 /* Pods-CrutchKitExampleTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CrutchKitExampleTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		7906AEA50036AD910D1651A6 /* Pods-CrutchKitExampleTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CrutchKitExampleTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		7932882CA8EFF777B6A7A46B /* CDObserversProxy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CDObserversProxy.h; sourceTree = "<group>"; };
+		7B669B62EBCA20C4D5C56C45 /* NSFileManager+CDSize.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+CDSize.h"; sourceTree = "<group>"; };
+		84B775F441D966B10ACECCCD /* UIImage+CDScale.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIImage+CDScale.h"; sourceTree = "<group>"; };
+		863B8286BE533FA6A5EA8CBB /* UIColor+CDExtension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIColor+CDExtension.m"; sourceTree = "<group>"; };
+		884645EF54B3DD91A0CB3ADE /* Pods-CrutchKitExample-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CrutchKitExample-resources.sh"; sourceTree = "<group>"; };
+		88EF20A019DDE3FD65AF1D73 /* UIImage+CDCrop.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIImage+CDCrop.m"; sourceTree = "<group>"; };
+		91F57AC842728706D720F10A /* UIView+CDCompletion.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIView+CDCompletion.m"; sourceTree = "<group>"; };
+		944BDD003FBA93B310B056D4 /* CDSelector.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CDSelector.h; sourceTree = "<group>"; };
+		9A332F9FD30239D99555B9A5 /* Pods-CrutchKitExampleTests-CrutchKit-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CrutchKitExampleTests-CrutchKit-Private.xcconfig"; path = "../Pods-CrutchKitExampleTests-CrutchKit/Pods-CrutchKitExampleTests-CrutchKit-Private.xcconfig"; sourceTree = "<group>"; };
+		9BC95D79C6E53C5CEE81B2B5 /* UIView+CDCompletion.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIView+CDCompletion.h"; sourceTree = "<group>"; };
+		9CEB1AA4914693BFF67D19D0 /* Pods-CrutchKitExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CrutchKitExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9F6EF5482230CF60639A5203 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		B0D0EEDCCC1FAA319FE762D1 /* Pods-CrutchKitExampleTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CrutchKitExampleTests-dummy.m"; sourceTree = "<group>"; };
+		BB2D3B6B10405CE79B322F87 /* UIImage+CDCreate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIImage+CDCreate.m"; sourceTree = "<group>"; };
+		C7593C801C8EBFD231BCC76F /* Pods-CrutchKitExample-CrutchKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CrutchKitExample-CrutchKit-prefix.pch"; sourceTree = "<group>"; };
+		CA1E176DEDC78589B88BCEAC /* CDDebugger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CDDebugger.h; sourceTree = "<group>"; };
+		CE0DF29838E1EB7A138CC2A7 /* Pods-CrutchKitExample-CrutchKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CrutchKitExample-CrutchKit-dummy.m"; sourceTree = "<group>"; };
+		CE64F3BCA04C4E2DC0A3CCD8 /* Pods-CrutchKitExampleTests-CrutchKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Pods-CrutchKitExampleTests-CrutchKit-dummy.m"; path = "../Pods-CrutchKitExampleTests-CrutchKit/Pods-CrutchKitExampleTests-CrutchKit-dummy.m"; sourceTree = "<group>"; };
+		CEAA3C5E4F6E6E5C2A5E1444 /* libPods-CrutchKitExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CrutchKitExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D34F725A6BC31C3EA9DC727F /* Pods-CrutchKitExample-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CrutchKitExample-environment.h"; sourceTree = "<group>"; };
+		D4CD47417961FB0F86E3388A /* libPods-CrutchKitExampleTests-CrutchKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CrutchKitExampleTests-CrutchKit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5619DD797ED2CFE5741379B /* Pods-CrutchKitExample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CrutchKitExample-dummy.m"; sourceTree = "<group>"; };
+		D727BC8587BAC12AFAF21BBD /* Pods-CrutchKitExampleTests-CrutchKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CrutchKitExampleTests-CrutchKit.xcconfig"; path = "../Pods-CrutchKitExampleTests-CrutchKit/Pods-CrutchKitExampleTests-CrutchKit.xcconfig"; sourceTree = "<group>"; };
+		E37125BC167551BF82CD51D3 /* UIViewController+CDObserver.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+CDObserver.m"; sourceTree = "<group>"; };
+		EA12CC6D9A57C86D637F7206 /* Pods-CrutchKitExampleTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CrutchKitExampleTests-resources.sh"; sourceTree = "<group>"; };
+		EA83468805B5BC5091A53B49 /* UIImage+CDCompare.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIImage+CDCompare.h"; sourceTree = "<group>"; };
+		EE43C70330D8B129FDA1C53A /* Pods-CrutchKitExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CrutchKitExampleTests.release.xcconfig"; sourceTree = "<group>"; };
+		F2CB1979D1BD033755DD20CE /* UIColor+CDExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIColor+CDExtension.h"; sourceTree = "<group>"; };
+		F66B96413DC2CA03C90AB2A7 /* libPods-CrutchKitExampleTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CrutchKitExampleTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7B0FF5D8C2C8A3D31134A6C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		F83F3E0834AC2CFC1A3CE2F1 /* CDProtocol.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CDProtocol.m; sourceTree = "<group>"; };
+		FD14645CB6AEB587C0B5AC43 /* UIViewController+CDObserver.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIViewController+CDObserver.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3C145969F9AA9BF75C342F7C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DAE2F67EA490289AB343AFA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		598DB22A7406EA0D3C29F6DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCC21952E36DB91B55B7E2E9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B9681C4DABAA509D1C3731B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6771BB94A7F504D952F8D5E8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEC2AB6A9B2AFE7F53B0D735 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E08DC5BDD183FFED00C17155 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0298F639CF04D9C59578842F /* UIColor */ = {
+			isa = PBXGroup;
+			children = (
+				F2CB1979D1BD033755DD20CE /* UIColor+CDExtension.h */,
+				863B8286BE533FA6A5EA8CBB /* UIColor+CDExtension.m */,
+			);
+			path = UIColor;
+			sourceTree = "<group>";
+		};
+		0EFA43F0651A37A64A2C054B /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				ED61A72C82D2B53DE064B7BB /* Pods-CrutchKitExample */,
+				B25CD2E81D5084A772139619 /* Pods-CrutchKitExampleTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		12BC909EC9F375B7178B8153 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				25E4C4979A6DC117548B4CE7 /* Helpers */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		1B4F66808B3662CA34E2F2E3 /* Runtime */ = {
+			isa = PBXGroup;
+			children = (
+				7AA26AFC02BAEBB554E0740A /* Classes */,
+			);
+			name = Runtime;
+			sourceTree = "<group>";
+		};
+		1CE4A246494B8675DD66C88D /* Proxy */ = {
+			isa = PBXGroup;
+			children = (
+				7932882CA8EFF777B6A7A46B /* CDObserversProxy.h */,
+				0A74D63EE77CECC97180EC53 /* CDObserversProxy.m */,
+				43C0F8DCB652179A83BEE975 /* CDProxy.h */,
+			);
+			path = Proxy;
+			sourceTree = "<group>";
+		};
+		20EABDB4ED57DECB0AD13DA5 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5E757ED88271E39843BB15C8 /* CrutchKit */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		25E4C4979A6DC117548B4CE7 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				73978D798476ADC1690CE465 /* CDTypes.h */,
+				F85983DF6916BC5D34D5F392 /* NSFileManager */,
+				0298F639CF04D9C59578842F /* UIColor */,
+				2E97F7A2599B95FE69C6CD66 /* UIImage */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		2E97F7A2599B95FE69C6CD66 /* UIImage */ = {
+			isa = PBXGroup;
+			children = (
+				EA83468805B5BC5091A53B49 /* UIImage+CDCompare.h */,
+				5EE68248C1853429DEC7A0FF /* UIImage+CDCompare.m */,
+				04A97FCB78380235B10B9548 /* UIImage+CDCreate.h */,
+				BB2D3B6B10405CE79B322F87 /* UIImage+CDCreate.m */,
+				0E2AE1823670FD2EC0EC0237 /* UIImage+CDCrop.h */,
+				88EF20A019DDE3FD65AF1D73 /* UIImage+CDCrop.m */,
+				527EE9031EE437FD3F83B911 /* UIImage+CDPainted.h */,
+				631CFB510BC2A68AB6947C93 /* UIImage+CDPainted.m */,
+				84B775F441D966B10ACECCCD /* UIImage+CDScale.h */,
+				6022A0F71180957511A1BE28 /* UIImage+CDScale.m */,
+			);
+			path = UIImage;
+			sourceTree = "<group>";
+		};
+		40D6D1D0C573D544CE9BF755 /* UIView+CDCompletion */ = {
+			isa = PBXGroup;
+			children = (
+				9BC95D79C6E53C5CEE81B2B5 /* UIView+CDCompletion.h */,
+				91F57AC842728706D720F10A /* UIView+CDCompletion.m */,
+			);
+			path = "UIView+CDCompletion";
+			sourceTree = "<group>";
+		};
+		48492F43F36E2E69C6858EB1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				EC003165FA60423139DDECEC /* UIApplication+CDProxying */,
+				85CF5D332DEB757482EF0801 /* UIResponder+CDProxying */,
+				90DB66DC4B619B94678E6818 /* UIViewController+CDObserver */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		4B58C20B09A2017CEADCB099 /* Debug */ = {
+			isa = PBXGroup;
+			children = (
+				CA1E176DEDC78589B88BCEAC /* CDDebugger.h */,
+				7660C3FA29191A7B95EA73F2 /* CDDebugger.m */,
+			);
+			path = Debug;
+			sourceTree = "<group>";
+		};
+		4B6E2609FB4089F9A0CD71BE /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0677C3F403B19E3DE6C6D4D8 /* Pods-CrutchKitExample-CrutchKit.xcconfig */,
+				1A54FA8A9C6A01425A5F3F9D /* Pods-CrutchKitExample-CrutchKit-Private.xcconfig */,
+				CE0DF29838E1EB7A138CC2A7 /* Pods-CrutchKitExample-CrutchKit-dummy.m */,
+				C7593C801C8EBFD231BCC76F /* Pods-CrutchKitExample-CrutchKit-prefix.pch */,
+				D727BC8587BAC12AFAF21BBD /* Pods-CrutchKitExampleTests-CrutchKit.xcconfig */,
+				9A332F9FD30239D99555B9A5 /* Pods-CrutchKitExampleTests-CrutchKit-Private.xcconfig */,
+				CE64F3BCA04C4E2DC0A3CCD8 /* Pods-CrutchKitExampleTests-CrutchKit-dummy.m */,
+				6C22C2F397FC9142F3765422 /* Pods-CrutchKitExampleTests-CrutchKit-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "Examples/CrutchKitExample/Pods/Target Support Files/Pods-CrutchKitExample-CrutchKit";
+			sourceTree = "<group>";
+		};
+		4FE2281FF9EA194DBEE4D63D /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				62D5AEA074B5BB94C9B86EB8 /* AnimationHandling */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		5967F61A84B0F63E33913A4F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D3E83CD83EA22E3D187599BD /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		59E9A8B358352DDB94DC3C52 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				4B58C20B09A2017CEADCB099 /* Debug */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		5E757ED88271E39843BB15C8 /* CrutchKit */ = {
+			isa = PBXGroup;
+			children = (
+				BE8F781B09AEE91D3AFB64B0 /* AnimationHandling */,
+				E7BC8F9B910D271554B1C417 /* Debug */,
+				A833B593F2529C323F25CE32 /* Helpers */,
+				A514803193C4D6E53BBFBF3C /* Proxying */,
+				1B4F66808B3662CA34E2F2E3 /* Runtime */,
+				4B6E2609FB4089F9A0CD71BE /* Support Files */,
+			);
+			name = CrutchKit;
+			path = ../../..;
+			sourceTree = "<group>";
+		};
+		62D5AEA074B5BB94C9B86EB8 /* AnimationHandling */ = {
+			isa = PBXGroup;
+			children = (
+				7C000FC7505CFC76F804D975 /* Extensions */,
+			);
+			path = AnimationHandling;
+			sourceTree = "<group>";
+		};
+		7AA26AFC02BAEBB554E0740A /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				E9EBEB23C194FF131BAD9B43 /* Runtime */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		7C000FC7505CFC76F804D975 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				40D6D1D0C573D544CE9BF755 /* UIView+CDCompletion */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		85B59E46C196C92909893BB9 = {
+			isa = PBXGroup;
+			children = (
+				9F6EF5482230CF60639A5203 /* Podfile */,
+				20EABDB4ED57DECB0AD13DA5 /* Development Pods */,
+				5967F61A84B0F63E33913A4F /* Frameworks */,
+				A4C3FAF5020FA1DBC45EE59A /* Products */,
+				0EFA43F0651A37A64A2C054B /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		85CF5D332DEB757482EF0801 /* UIResponder+CDProxying */ = {
+			isa = PBXGroup;
+			children = (
+				4ED8A80C829834D2D4480F46 /* UIResponder+CDProxying.h */,
+				5F36FC34AE7069A8D2903508 /* UIResponder+CDProxying.m */,
+			);
+			path = "UIResponder+CDProxying";
+			sourceTree = "<group>";
+		};
+		90DB66DC4B619B94678E6818 /* UIViewController+CDObserver */ = {
+			isa = PBXGroup;
+			children = (
+				FD14645CB6AEB587C0B5AC43 /* UIViewController+CDObserver.h */,
+				E37125BC167551BF82CD51D3 /* UIViewController+CDObserver.m */,
+			);
+			path = "UIViewController+CDObserver";
+			sourceTree = "<group>";
+		};
+		933D4892E8390B83F2942610 /* CDProtocol */ = {
+			isa = PBXGroup;
+			children = (
+				1C1E379FA71F9FC1FBB14A64 /* CDProtocol.h */,
+				F83F3E0834AC2CFC1A3CE2F1 /* CDProtocol.m */,
+			);
+			path = CDProtocol;
+			sourceTree = "<group>";
+		};
+		A4C3FAF5020FA1DBC45EE59A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CEAA3C5E4F6E6E5C2A5E1444 /* libPods-CrutchKitExample.a */,
+				6642CF8A42DD286AFDC5FB63 /* libPods-CrutchKitExample-CrutchKit.a */,
+				F66B96413DC2CA03C90AB2A7 /* libPods-CrutchKitExampleTests.a */,
+				D4CD47417961FB0F86E3388A /* libPods-CrutchKitExampleTests-CrutchKit.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A514803193C4D6E53BBFBF3C /* Proxying */ = {
+			isa = PBXGroup;
+			children = (
+				C207DC2D4CC49B0C542D1678 /* Classes */,
+			);
+			name = Proxying;
+			sourceTree = "<group>";
+		};
+		A833B593F2529C323F25CE32 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				12BC909EC9F375B7178B8153 /* Classes */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		AAFDBBCA3E977DEAE9D2920E /* CDSelector */ = {
+			isa = PBXGroup;
+			children = (
+				944BDD003FBA93B310B056D4 /* CDSelector.h */,
+				6D31004226942E5157FE9D09 /* CDSelector.m */,
+			);
+			path = CDSelector;
+			sourceTree = "<group>";
+		};
+		B25CD2E81D5084A772139619 /* Pods-CrutchKitExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				7718FEACFEC76DF89DD7D564 /* Pods-CrutchKitExampleTests-acknowledgements.markdown */,
+				7906AEA50036AD910D1651A6 /* Pods-CrutchKitExampleTests-acknowledgements.plist */,
+				B0D0EEDCCC1FAA319FE762D1 /* Pods-CrutchKitExampleTests-dummy.m */,
+				2E1B4048DC951D3E682D850D /* Pods-CrutchKitExampleTests-environment.h */,
+				EA12CC6D9A57C86D637F7206 /* Pods-CrutchKitExampleTests-resources.sh */,
+				9CEB1AA4914693BFF67D19D0 /* Pods-CrutchKitExampleTests.debug.xcconfig */,
+				EE43C70330D8B129FDA1C53A /* Pods-CrutchKitExampleTests.release.xcconfig */,
+			);
+			name = "Pods-CrutchKitExampleTests";
+			path = "Target Support Files/Pods-CrutchKitExampleTests";
+			sourceTree = "<group>";
+		};
+		BE8F781B09AEE91D3AFB64B0 /* AnimationHandling */ = {
+			isa = PBXGroup;
+			children = (
+				4FE2281FF9EA194DBEE4D63D /* Classes */,
+			);
+			name = AnimationHandling;
+			sourceTree = "<group>";
+		};
+		C207DC2D4CC49B0C542D1678 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				D7F2B1C1EDE043FA68A95FDD /* Proxying */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		D3E83CD83EA22E3D187599BD /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				F7B0FF5D8C2C8A3D31134A6C /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		D7F2B1C1EDE043FA68A95FDD /* Proxying */ = {
+			isa = PBXGroup;
+			children = (
+				F9B601C49B4629C6DEA75773 /* CDProxy */,
+				48492F43F36E2E69C6858EB1 /* Extensions */,
+			);
+			path = Proxying;
+			sourceTree = "<group>";
+		};
+		E7BC8F9B910D271554B1C417 /* Debug */ = {
+			isa = PBXGroup;
+			children = (
+				59E9A8B358352DDB94DC3C52 /* Classes */,
+			);
+			name = Debug;
+			sourceTree = "<group>";
+		};
+		E9EBEB23C194FF131BAD9B43 /* Runtime */ = {
+			isa = PBXGroup;
+			children = (
+				933D4892E8390B83F2942610 /* CDProtocol */,
+				AAFDBBCA3E977DEAE9D2920E /* CDSelector */,
+			);
+			path = Runtime;
+			sourceTree = "<group>";
+		};
+		EC003165FA60423139DDECEC /* UIApplication+CDProxying */ = {
+			isa = PBXGroup;
+			children = (
+				4A4DE460EA29E182DA6CADB0 /* UIApplication+CDProxying.h */,
+				0273D9F3A4FF7BEF5D587737 /* UIApplication+CDProxying.m */,
+			);
+			path = "UIApplication+CDProxying";
+			sourceTree = "<group>";
+		};
+		ED61A72C82D2B53DE064B7BB /* Pods-CrutchKitExample */ = {
+			isa = PBXGroup;
+			children = (
+				59AB8ED90C94703894605C61 /* Pods-CrutchKitExample-acknowledgements.markdown */,
+				6A497873FAFB03C92F3C6EA9 /* Pods-CrutchKitExample-acknowledgements.plist */,
+				D5619DD797ED2CFE5741379B /* Pods-CrutchKitExample-dummy.m */,
+				D34F725A6BC31C3EA9DC727F /* Pods-CrutchKitExample-environment.h */,
+				884645EF54B3DD91A0CB3ADE /* Pods-CrutchKitExample-resources.sh */,
+				1FC719130B396B88A17BC000 /* Pods-CrutchKitExample.debug.xcconfig */,
+				591A4C82475763675ACDDA8D /* Pods-CrutchKitExample.release.xcconfig */,
+			);
+			name = "Pods-CrutchKitExample";
+			path = "Target Support Files/Pods-CrutchKitExample";
+			sourceTree = "<group>";
+		};
+		F85983DF6916BC5D34D5F392 /* NSFileManager */ = {
+			isa = PBXGroup;
+			children = (
+				7B669B62EBCA20C4D5C56C45 /* NSFileManager+CDSize.h */,
+				104BFF4138F2DB10FB849F43 /* NSFileManager+CDSize.m */,
+			);
+			path = NSFileManager;
+			sourceTree = "<group>";
+		};
+		F9B601C49B4629C6DEA75773 /* CDProxy */ = {
+			isa = PBXGroup;
+			children = (
+				1CE4A246494B8675DD66C88D /* Proxy */,
+			);
+			path = CDProxy;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		588742AE45EC18D5AEB8F16D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5ACD038F11FBBFC682A346F /* CDDebugger.h in Headers */,
+				40AE64A8F2136E122F17AD1D /* CDObserversProxy.h in Headers */,
+				C2154CB814F8C76888881928 /* CDProtocol.h in Headers */,
+				37005F31FC92D88A5471F362 /* CDProxy.h in Headers */,
+				62C64998744209AC1E81EC64 /* CDSelector.h in Headers */,
+				CAC288D9690EE3C510F76EC8 /* CDTypes.h in Headers */,
+				10689E2AEA08D01AA8EC36C9 /* NSFileManager+CDSize.h in Headers */,
+				70B090E8ECF2E09613462151 /* UIApplication+CDProxying.h in Headers */,
+				3300BFB6DF1BCFAAF53BAA84 /* UIColor+CDExtension.h in Headers */,
+				1938A56C4489DDCD05C3F930 /* UIImage+CDCompare.h in Headers */,
+				2C58F89AC11ACF119B615EE9 /* UIImage+CDCreate.h in Headers */,
+				873FE997F3A7E06CE1AD03B2 /* UIImage+CDCrop.h in Headers */,
+				4C9769B19D42F204DBD906D0 /* UIImage+CDPainted.h in Headers */,
+				46A1384FA44B62574420C571 /* UIImage+CDScale.h in Headers */,
+				D40B83008A13F2AC1F3EC92E /* UIResponder+CDProxying.h in Headers */,
+				99D81348A3D687B8106F6023 /* UIView+CDCompletion.h in Headers */,
+				2A7167CA712C71FCE282791B /* UIViewController+CDObserver.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFEDCECF08C4851712962829 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D374168A5696AB31B4AF6E1A /* CDDebugger.h in Headers */,
+				1944E2D88E1CC576AFB3222B /* CDObserversProxy.h in Headers */,
+				448C044A5D8C4180569FC23B /* CDProtocol.h in Headers */,
+				C3FDB968F0FA6C74C1F96213 /* CDProxy.h in Headers */,
+				C3CB0B27C61B8F156DDB9C92 /* CDSelector.h in Headers */,
+				10C61DE473DD49A60B7E4C33 /* CDTypes.h in Headers */,
+				56200CC72E367D2537CB395A /* NSFileManager+CDSize.h in Headers */,
+				69CE94C36693E4E54C5AE92C /* UIApplication+CDProxying.h in Headers */,
+				3430F91CC87FF70124B99A37 /* UIColor+CDExtension.h in Headers */,
+				9FE18FF07005BFE6479802F0 /* UIImage+CDCompare.h in Headers */,
+				DEFC0A506522572136B554A1 /* UIImage+CDCreate.h in Headers */,
+				2E6A2CE237265A1DCBC1B59B /* UIImage+CDCrop.h in Headers */,
+				7B5681AE99C34EF140265DB2 /* UIImage+CDPainted.h in Headers */,
+				CDBEC98053E4F3A79DF455E1 /* UIImage+CDScale.h in Headers */,
+				BDEDC9DE37DFFE1EA310CFAC /* UIResponder+CDProxying.h in Headers */,
+				7BD05035D374DDF06D172509 /* UIView+CDCompletion.h in Headers */,
+				A537B9B7BAF2B52809478C6E /* UIViewController+CDObserver.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		77D77A5F6E0F7AE87FD5DE14 /* Pods-CrutchKitExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 91B4145A83A6275F327A5FFD /* Build configuration list for PBXNativeTarget "Pods-CrutchKitExample" */;
+			buildPhases = (
+				9B39F9CD8F88683C0D87A136 /* Sources */,
+				6B9681C4DABAA509D1C3731B /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3C4D67B57170997E4E442C9A /* PBXTargetDependency */,
+			);
+			name = "Pods-CrutchKitExample";
+			productName = "Pods-CrutchKitExample";
+			productReference = CEAA3C5E4F6E6E5C2A5E1444 /* libPods-CrutchKitExample.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		8370DC7E97DC761E4596B5F5 /* Pods-CrutchKitExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 56DC0F857EB7F28E1927761E /* Build configuration list for PBXNativeTarget "Pods-CrutchKitExampleTests" */;
+			buildPhases = (
+				08068C498739CBF04773FF21 /* Sources */,
+				DEC2AB6A9B2AFE7F53B0D735 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				77310C78F492A59115EAD15C /* PBXTargetDependency */,
+			);
+			name = "Pods-CrutchKitExampleTests";
+			productName = "Pods-CrutchKitExampleTests";
+			productReference = F66B96413DC2CA03C90AB2A7 /* libPods-CrutchKitExampleTests.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		A15990FDF562D448FC8B87A9 /* Pods-CrutchKitExample-CrutchKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1C6DCB9F88ABC41F4BDB1E41 /* Build configuration list for PBXNativeTarget "Pods-CrutchKitExample-CrutchKit" */;
+			buildPhases = (
+				03EA5E935208AEA90550F8BB /* Sources */,
+				3C145969F9AA9BF75C342F7C /* Frameworks */,
+				588742AE45EC18D5AEB8F16D /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-CrutchKitExample-CrutchKit";
+			productName = "Pods-CrutchKitExample-CrutchKit";
+			productReference = 6642CF8A42DD286AFDC5FB63 /* libPods-CrutchKitExample-CrutchKit.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		AEAEADDC8029E62F27FB28D6 /* Pods-CrutchKitExampleTests-CrutchKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B6152FB3D6144B92A8C16150 /* Build configuration list for PBXNativeTarget "Pods-CrutchKitExampleTests-CrutchKit" */;
+			buildPhases = (
+				0E3CFBA753779197C4165DD8 /* Sources */,
+				598DB22A7406EA0D3C29F6DD /* Frameworks */,
+				BFEDCECF08C4851712962829 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-CrutchKitExampleTests-CrutchKit";
+			productName = "Pods-CrutchKitExampleTests-CrutchKit";
+			productReference = D4CD47417961FB0F86E3388A /* libPods-CrutchKitExampleTests-CrutchKit.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A5E4C086B3FC93014D8E636E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+			};
+			buildConfigurationList = 5703874ECA6CAEC26A776171 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 85B59E46C196C92909893BB9;
+			productRefGroup = A4C3FAF5020FA1DBC45EE59A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				77D77A5F6E0F7AE87FD5DE14 /* Pods-CrutchKitExample */,
+				A15990FDF562D448FC8B87A9 /* Pods-CrutchKitExample-CrutchKit */,
+				8370DC7E97DC761E4596B5F5 /* Pods-CrutchKitExampleTests */,
+				AEAEADDC8029E62F27FB28D6 /* Pods-CrutchKitExampleTests-CrutchKit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		03EA5E935208AEA90550F8BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C5BD98ADBD13D91BFBB45E8 /* CDDebugger.m in Sources */,
+				9E521AE4F7232BA4456F2F5E /* CDObserversProxy.m in Sources */,
+				34AE88DB515C372A2477590C /* CDProtocol.m in Sources */,
+				D064A259571B07452E462935 /* CDSelector.m in Sources */,
+				1F8B2B76B11B79032B23B4B1 /* NSFileManager+CDSize.m in Sources */,
+				318091E48D92B27A2F959731 /* Pods-CrutchKitExample-CrutchKit-dummy.m in Sources */,
+				79A8F038AA370255AC3F6B2F /* UIApplication+CDProxying.m in Sources */,
+				FD1C898E1BD23C98A24B0623 /* UIColor+CDExtension.m in Sources */,
+				278B5E38598E1642E1BBE6E3 /* UIImage+CDCompare.m in Sources */,
+				A6CF1294E952689E0CFC9593 /* UIImage+CDCreate.m in Sources */,
+				91C29F77E46B3187389AA90D /* UIImage+CDCrop.m in Sources */,
+				AF0759CBDB07A1E380C6A0B1 /* UIImage+CDPainted.m in Sources */,
+				948A72191DFA16E1D07AACA0 /* UIImage+CDScale.m in Sources */,
+				972A0B6220DC9E96313B25C0 /* UIResponder+CDProxying.m in Sources */,
+				16F36C4BD6028D3E53CE9FCB /* UIView+CDCompletion.m in Sources */,
+				E1A59584C0891DA6DDA6082B /* UIViewController+CDObserver.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08068C498739CBF04773FF21 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A9238E68B2C53921C61B4BA /* Pods-CrutchKitExampleTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0E3CFBA753779197C4165DD8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				225A86B13AF1CBA7B3C92CA4 /* CDDebugger.m in Sources */,
+				1E9384BFE14B38F293589A6C /* CDObserversProxy.m in Sources */,
+				DB2D0763D1B3EE031BE7E74D /* CDProtocol.m in Sources */,
+				82B92A6CFC9C56B92B02DA8E /* CDSelector.m in Sources */,
+				C7A74B6A9A5625FA05705B11 /* NSFileManager+CDSize.m in Sources */,
+				2BB845ACCE629C5BE22FD280 /* Pods-CrutchKitExampleTests-CrutchKit-dummy.m in Sources */,
+				0CC7F319B005DBF3B4A06063 /* UIApplication+CDProxying.m in Sources */,
+				F4CC87AA6A480AA01D192160 /* UIColor+CDExtension.m in Sources */,
+				1AA8E27C900374B1C816AD64 /* UIImage+CDCompare.m in Sources */,
+				E89EB5D4D379F7D40DD6FEFD /* UIImage+CDCreate.m in Sources */,
+				301E9EFA84BA35219080CEF9 /* UIImage+CDCrop.m in Sources */,
+				CE143B68A0834A6F0A7D7697 /* UIImage+CDPainted.m in Sources */,
+				FE485D6C9E4C821EDD7A098C /* UIImage+CDScale.m in Sources */,
+				7721BBE0C9812D2F226712EE /* UIResponder+CDProxying.m in Sources */,
+				7EAA7FB98F78C467B90BD591 /* UIView+CDCompletion.m in Sources */,
+				4260662047CA12258C168E89 /* UIViewController+CDObserver.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B39F9CD8F88683C0D87A136 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A080753870550A1C1D41D75A /* Pods-CrutchKitExample-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3C4D67B57170997E4E442C9A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-CrutchKitExample-CrutchKit";
+			target = A15990FDF562D448FC8B87A9 /* Pods-CrutchKitExample-CrutchKit */;
+			targetProxy = FEE530CA551034C2A9143051 /* PBXContainerItemProxy */;
+		};
+		77310C78F492A59115EAD15C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-CrutchKitExampleTests-CrutchKit";
+			target = AEAEADDC8029E62F27FB28D6 /* Pods-CrutchKitExampleTests-CrutchKit */;
+			targetProxy = 67FD72F21BA637F2FB491F9B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		182F7A6023B4B837F56474D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A54FA8A9C6A01425A5F3F9D /* Pods-CrutchKitExample-CrutchKit-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-CrutchKitExample-CrutchKit/Pods-CrutchKitExample-CrutchKit-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		1A9B30C8F9534F431CC5FDA5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A332F9FD30239D99555B9A5 /* Pods-CrutchKitExampleTests-CrutchKit-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-CrutchKitExampleTests-CrutchKit/Pods-CrutchKitExampleTests-CrutchKit-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		20C06AD94BFF8449A49EC103 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		3806AF3CEF34ED316106C9CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9CEB1AA4914693BFF67D19D0 /* Pods-CrutchKitExampleTests.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		4C0CEB12E4A8F1C723417F04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 591A4C82475763675ACDDA8D /* Pods-CrutchKitExample.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		60F68FDFA2CF0339D7B0169F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A332F9FD30239D99555B9A5 /* Pods-CrutchKitExampleTests-CrutchKit-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-CrutchKitExampleTests-CrutchKit/Pods-CrutchKitExampleTests-CrutchKit-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		AD0B4A38906F8ED559D605AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE43C70330D8B129FDA1C53A /* Pods-CrutchKitExampleTests.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		C41AFD9F39B09EC119E9B67D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1FC719130B396B88A17BC000 /* Pods-CrutchKitExample.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		F1068296BEF3683B041E86CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A54FA8A9C6A01425A5F3F9D /* Pods-CrutchKitExample-CrutchKit-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-CrutchKitExample-CrutchKit/Pods-CrutchKitExample-CrutchKit-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		F304667EE5EBE306797BF270 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1C6DCB9F88ABC41F4BDB1E41 /* Build configuration list for PBXNativeTarget "Pods-CrutchKitExample-CrutchKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				182F7A6023B4B837F56474D7 /* Debug */,
+				F1068296BEF3683B041E86CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		56DC0F857EB7F28E1927761E /* Build configuration list for PBXNativeTarget "Pods-CrutchKitExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3806AF3CEF34ED316106C9CA /* Debug */,
+				AD0B4A38906F8ED559D605AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5703874ECA6CAEC26A776171 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20C06AD94BFF8449A49EC103 /* Debug */,
+				F304667EE5EBE306797BF270 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		91B4145A83A6275F327A5FFD /* Build configuration list for PBXNativeTarget "Pods-CrutchKitExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C41AFD9F39B09EC119E9B67D /* Debug */,
+				4C0CEB12E4A8F1C723417F04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B6152FB3D6144B92A8C16150 /* Build configuration list for PBXNativeTarget "Pods-CrutchKitExampleTests-CrutchKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				60F68FDFA2CF0339D7B0169F /* Debug */,
+				1A9B30C8F9534F431CC5FDA5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A5E4C086B3FC93014D8E636E /* Project object */;
+}

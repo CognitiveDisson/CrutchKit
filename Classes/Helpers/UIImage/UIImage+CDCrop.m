@@ -50,4 +50,16 @@
     return result;
 }
 
+- (UIImage *)squareImage {
+    CGSize imageSize = self.size;
+    if (imageSize.width == imageSize.height) {
+        return self;
+    }
+    CGFloat length = MIN(imageSize.width, imageSize.height);
+    CGFloat widthDif = imageSize.width - length;
+    CGFloat heightDif = imageSize.height - length;
+    CGRect cropRect = CGRectMake(widthDif/2, heightDif/2, length, length);
+    return [self cd_imageCropped:cropRect];
+}
+
 @end

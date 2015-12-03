@@ -14,4 +14,6 @@
 
 - (UIImage *)cd_imagedCroppedToCircle;
 
+- (UIImage *)squareImage;
+
 @end

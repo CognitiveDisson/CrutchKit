@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		0CC7F319B005DBF3B4A06063 /* UIApplication+CDProxying.m in Sources */ = {isa = PBXBuildFile; fileRef = 0273D9F3A4FF7BEF5D587737 /* UIApplication+CDProxying.m */; };
 		10689E2AEA08D01AA8EC36C9 /* NSFileManager+CDSize.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B669B62EBCA20C4D5C56C45 /* NSFileManager+CDSize.h */; };
-		10C61DE473DD49A60B7E4C33 /* CDTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 73978D798476ADC1690CE465 /* CDTypes.h */; };
 		16F36C4BD6028D3E53CE9FCB /* UIView+CDCompletion.m in Sources */ = {isa = PBXBuildFile; fileRef = 91F57AC842728706D720F10A /* UIView+CDCompletion.m */; };
 		1938A56C4489DDCD05C3F930 /* UIImage+CDCompare.h in Headers */ = {isa = PBXBuildFile; fileRef = EA83468805B5BC5091A53B49 /* UIImage+CDCompare.h */; };
 		1944E2D88E1CC576AFB3222B /* CDObserversProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 7932882CA8EFF777B6A7A46B /* CDObserversProxy.h */; };
@@ -64,7 +63,6 @@
 		C3CB0B27C61B8F156DDB9C92 /* CDSelector.h in Headers */ = {isa = PBXBuildFile; fileRef = 944BDD003FBA93B310B056D4 /* CDSelector.h */; };
 		C3FDB968F0FA6C74C1F96213 /* CDProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 43C0F8DCB652179A83BEE975 /* CDProxy.h */; };
 		C7A74B6A9A5625FA05705B11 /* NSFileManager+CDSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 104BFF4138F2DB10FB849F43 /* NSFileManager+CDSize.m */; };
-		CAC288D9690EE3C510F76EC8 /* CDTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 73978D798476ADC1690CE465 /* CDTypes.h */; };
 		CCC21952E36DB91B55B7E2E9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7B0FF5D8C2C8A3D31134A6C /* Foundation.framework */; };
 		CDBEC98053E4F3A79DF455E1 /* UIImage+CDScale.h in Headers */ = {isa = PBXBuildFile; fileRef = 84B775F441D966B10ACECCCD /* UIImage+CDScale.h */; };
 		CE143B68A0834A6F0A7D7697 /* UIImage+CDPainted.m in Sources */ = {isa = PBXBuildFile; fileRef = 631CFB510BC2A68AB6947C93 /* UIImage+CDPainted.m */; };
@@ -123,7 +121,6 @@
 		6A497873FAFB03C92F3C6EA9 /* Pods-CrutchKitExample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CrutchKitExample-acknowledgements.plist"; sourceTree = "<group>"; };
 		6C22C2F397FC9142F3765422 /* Pods-CrutchKitExampleTests-CrutchKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-CrutchKitExampleTests-CrutchKit-prefix.pch"; path = "../Pods-CrutchKitExampleTests-CrutchKit/Pods-CrutchKitExampleTests-CrutchKit-prefix.pch"; sourceTree = "<group>"; };
 		6D31004226942E5157FE9D09 /* CDSelector.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CDSelector.m; sourceTree = "<group>"; };
-		73978D798476ADC1690CE465 /* CDTypes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CDTypes.h; sourceTree = "<group>"; };
 		7660C3FA29191A7B95EA73F2 /* CDDebugger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CDDebugger.m; sourceTree = "<group>"; };
 		7718FEACFEC76DF89DD7D564 /* Pods-CrutchKitExampleTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CrutchKitExampleTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		7906AEA50036AD910D1651A6 /* Pods-CrutchKitExampleTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CrutchKitExampleTests-acknowledgements.plist"; sourceTree = "<group>"; };
@@ -150,6 +147,10 @@
 		D4CD47417961FB0F86E3388A /* libPods-CrutchKitExampleTests-CrutchKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CrutchKitExampleTests-CrutchKit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5619DD797ED2CFE5741379B /* Pods-CrutchKitExample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CrutchKitExample-dummy.m"; sourceTree = "<group>"; };
 		D727BC8587BAC12AFAF21BBD /* Pods-CrutchKitExampleTests-CrutchKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CrutchKitExampleTests-CrutchKit.xcconfig"; path = "../Pods-CrutchKitExampleTests-CrutchKit/Pods-CrutchKitExampleTests-CrutchKit.xcconfig"; sourceTree = "<group>"; };
+		DD3C7CB01C10497000A7422A /* CDProxying.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CDProxying.h; path = /Users/vadim/CrutchKit/Classes/Proxying/CDProxying.h; sourceTree = "<absolute>"; };
+		DD3C7CB11C104A0B00A7422A /* CDRuntime.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDRuntime.h; sourceTree = "<group>"; };
+		DD3C7CB21C104A6C00A7422A /* CDHelpers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDHelpers.h; sourceTree = "<group>"; };
+		DD3C7CB41C104B5E00A7422A /* CDTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDTypes.h; sourceTree = "<group>"; };
 		E37125BC167551BF82CD51D3 /* UIViewController+CDObserver.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+CDObserver.m"; sourceTree = "<group>"; };
 		EA12CC6D9A57C86D637F7206 /* Pods-CrutchKitExampleTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CrutchKitExampleTests-resources.sh"; sourceTree = "<group>"; };
 		EA83468805B5BC5091A53B49 /* UIImage+CDCompare.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIImage+CDCompare.h"; sourceTree = "<group>"; };
@@ -252,7 +253,8 @@
 		25E4C4979A6DC117548B4CE7 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				73978D798476ADC1690CE465 /* CDTypes.h */,
+				DD3C7CB21C104A6C00A7422A /* CDHelpers.h */,
+				DD3C7CB41C104B5E00A7422A /* CDTypes.h */,
 				F85983DF6916BC5D34D5F392 /* NSFileManager */,
 				0298F639CF04D9C59578842F /* UIColor */,
 				2E97F7A2599B95FE69C6CD66 /* UIImage */,
@@ -516,6 +518,7 @@
 		E9EBEB23C194FF131BAD9B43 /* Runtime */ = {
 			isa = PBXGroup;
 			children = (
+				DD3C7CB11C104A0B00A7422A /* CDRuntime.h */,
 				933D4892E8390B83F2942610 /* CDProtocol */,
 				AAFDBBCA3E977DEAE9D2920E /* CDSelector */,
 			);
@@ -558,6 +561,7 @@
 		F9B601C49B4629C6DEA75773 /* CDProxy */ = {
 			isa = PBXGroup;
 			children = (
+				DD3C7CB01C10497000A7422A /* CDProxying.h */,
 				1CE4A246494B8675DD66C88D /* Proxy */,
 			);
 			path = CDProxy;
@@ -575,7 +579,6 @@
 				C2154CB814F8C76888881928 /* CDProtocol.h in Headers */,
 				37005F31FC92D88A5471F362 /* CDProxy.h in Headers */,
 				62C64998744209AC1E81EC64 /* CDSelector.h in Headers */,
-				CAC288D9690EE3C510F76EC8 /* CDTypes.h in Headers */,
 				10689E2AEA08D01AA8EC36C9 /* NSFileManager+CDSize.h in Headers */,
 				70B090E8ECF2E09613462151 /* UIApplication+CDProxying.h in Headers */,
 				3300BFB6DF1BCFAAF53BAA84 /* UIColor+CDExtension.h in Headers */,
@@ -599,7 +602,6 @@
 				448C044A5D8C4180569FC23B /* CDProtocol.h in Headers */,
 				C3FDB968F0FA6C74C1F96213 /* CDProxy.h in Headers */,
 				C3CB0B27C61B8F156DDB9C92 /* CDSelector.h in Headers */,
-				10C61DE473DD49A60B7E4C33 /* CDTypes.h in Headers */,
 				56200CC72E367D2537CB395A /* NSFileManager+CDSize.h in Headers */,
 				69CE94C36693E4E54C5AE92C /* UIApplication+CDProxying.h in Headers */,
 				3430F91CC87FF70124B99A37 /* UIColor+CDExtension.h in Headers */,

@@ -7,6 +7,7 @@
 //
 
 #import "CDObserversProxy.h"
+#import "UIApplication+CDProxying.h"
 #import "CDProtocol.h"
 #import "CDSelector.h"
 #import <objc/runtime.h>
@@ -47,6 +48,16 @@
     
     return [[self alloc] initWithProtocol:protocol
                                 observers:observers];
+}
+
++ (instancetype)observersProxyForSender:(UIResponder *)sender
+                               protocol:(Protocol *)protocol {
+    return [[UIApplication sharedApplication] observersProxyForProtocol:protocol
+                                                              forSender:sender];
+}
+
+- (id)unwrapProtocol {
+    return self;
 }
 
 - (BOOL)respondsToSelector:(SEL)selector

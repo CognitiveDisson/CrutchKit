@@ -16,4 +16,6 @@
 
 - (Protocol *)proxyProtocol;
 
+- (id)unwrapProtocol;
+
 @end

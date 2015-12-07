@@ -11,15 +11,15 @@
 
 #import "CDTypes.h"
 
-#import "NSFileManager+CDSize.h"
-#import "UIColor+CDExtension.h"
+#import "NSFileManager/NSFileManager+CDSize.h"
+#import "UIColor/UIColor+CDExtension.h"
 
 #pragma mark - UIImage Extensions
 
-#import "UIImage+CDCompare.h"
-#import "UIImage+CDCreate.h"
-#import "UIImage+CDCrop.h"
-#import "UIImage+CDPainted.h"
-#import "UIImage+CDScale.h"
+#import "UIImage/UIImage+CDCompare.h"
+#import "UIImage/UIImage+CDCreate.h"
+#import "UIImage/UIImage+CDCrop.h"
+#import "UIImage/UIImage+CDPainted.h"
+#import "UIImage/UIImage+CDScale.h"
 
 #endif /* CDHelpers_h */

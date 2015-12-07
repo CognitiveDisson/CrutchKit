@@ -10,11 +10,11 @@
 #define CDProxying_h
 
 #pragma mark - Proxy
-#import "CDObserversProxy.h"
+#import "CDProxy/Proxy/CDObserversProxy.h"
 
 #pragma mark - Extensions
-#import "UIApplication+CDProxying.h"
-#import "UIResponder+CDProxying.h"
-#import "UIViewController+CDObserver.h"
+#import "Extensions/UIApplication+CDProxying/UIApplication+CDProxying.h"
+#import "Extensions/UIResponder+CDProxying/UIResponder+CDProxying.h"
+#import "Extensions/UIViewController+CDObserver/UIViewController+CDObserver.h"
 
 #endif /* CDProxying_h */

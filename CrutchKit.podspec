@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "CrutchKit"
-  s.version      = "0.0.3"
+  s.version      = "0.0.4"
   s.summary      = "CrutchKit is a set of crutches for IOS development."
   s.homepage     = "https://github.com/CognitiveDisson/CrutchKit"
   s.license      = "MIT"
@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   s.header_mappings_dir  = "Classes"
 
   s.subspec 'Proxying' do |pr|
-    pr.source_files = "Classes/Proxying/**/*.{h,m}"
+    pr.source_files = "Classes/Proxying", "Classes/Proxying/**/*.{h,m}"
     pr.dependency 'CrutchKit/Runtime'
   end
 

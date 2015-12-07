@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "CDDebugger.h"
+#import <CrutchKit/Debug/CDDebugger.h>
 
 @interface ViewController ()
 

@@ -19,6 +19,9 @@
 + (instancetype)observersProxyWithProtocol:(Protocol *)protocol
                        observers:(NSArray *)observers;
 
++ (instancetype)observersProxyForSender:(UIResponder *)sender
+                               protocol:(Protocol *)protocol;
+
 @property (assign, nonatomic) BOOL onlyFirstRespondedObserver;
 
 - (void)addObserver:(id<CDObserver>)observer;

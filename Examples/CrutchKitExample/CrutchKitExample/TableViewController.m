@@ -8,9 +8,9 @@
 
 #import "TableViewController.h"
 #import "TableViewCell.h"
-#import <UIViewController+CDObserver.h>
-#import <UIColor+CDExtension.h>
-#import <CDProtocol.h>
+#import <CrutchKit/Proxying/CDProxying.h>
+#import <CrutchKit/Runtime/CDRuntime.h>
+#import <CrutchKit/Helpers/CDHelpers.h>
 
 @interface TableViewController () <TableViewCellDelegate>
 

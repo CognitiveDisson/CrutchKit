@@ -7,7 +7,7 @@
 //
 
 #import "TableViewCell.h"
-#import "UIResponder+CDProxying.h"
+#import <CrutchKit/Proxying/CDProxying.h>
 
 @interface TableViewCell ()
 

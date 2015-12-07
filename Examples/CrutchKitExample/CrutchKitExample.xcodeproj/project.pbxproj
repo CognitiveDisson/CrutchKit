@@ -173,6 +173,7 @@
 				DD70C0851B1DB68A0096AE1B /* Frameworks */,
 				DD70C0861B1DB68A0096AE1B /* Resources */,
 				210E5CB0A433887093C949A3 /* Copy Pods Resources */,
+				56C4C37F42C976B90D858004 /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -192,6 +193,7 @@
 				DD70C09E1B1DB68A0096AE1B /* Frameworks */,
 				DD70C09F1B1DB68A0096AE1B /* Resources */,
 				7B97C202BD553E8BC6C720A8 /* Copy Pods Resources */,
+				5245196F426C1CCDEC9D81D3 /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -289,6 +291,36 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CrutchKitExample/Pods-CrutchKitExample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5245196F426C1CCDEC9D81D3 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CrutchKitExampleTests/Pods-CrutchKitExampleTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		56C4C37F42C976B90D858004 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CrutchKitExample/Pods-CrutchKitExample-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		7B97C202BD553E8BC6C720A8 /* Copy Pods Resources */ = {

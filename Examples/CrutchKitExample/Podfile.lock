@@ -1,17 +1,17 @@
 PODS:
-  - CrutchKit (0.0.2):
-    - CrutchKit/AnimationHandling (= 0.0.2)
-    - CrutchKit/Debug (= 0.0.2)
-    - CrutchKit/Helpers (= 0.0.2)
-    - CrutchKit/Proxying (= 0.0.2)
-    - CrutchKit/Runtime (= 0.0.2)
-  - CrutchKit/AnimationHandling (0.0.2):
+  - CrutchKit (0.0.4):
+    - CrutchKit/AnimationHandling (= 0.0.4)
+    - CrutchKit/Debug (= 0.0.4)
+    - CrutchKit/Helpers (= 0.0.4)
+    - CrutchKit/Proxying (= 0.0.4)
+    - CrutchKit/Runtime (= 0.0.4)
+  - CrutchKit/AnimationHandling (0.0.4):
     - CrutchKit/Helpers
-  - CrutchKit/Debug (0.0.2)
-  - CrutchKit/Helpers (0.0.2)
-  - CrutchKit/Proxying (0.0.2):
+  - CrutchKit/Debug (0.0.4)
+  - CrutchKit/Helpers (0.0.4)
+  - CrutchKit/Proxying (0.0.4):
     - CrutchKit/Runtime
-  - CrutchKit/Runtime (0.0.2)
+  - CrutchKit/Runtime (0.0.4)
 
 DEPENDENCIES:
   - CrutchKit (from `../../`)
@@ -21,6 +21,6 @@ EXTERNAL SOURCES:
     :path: ../../
 
 SPEC CHECKSUMS:
-  CrutchKit: 01a88ebd2667dd0b947854e369824ff831c04e5c
+  CrutchKit: b46778cad4c8930f0f0fe37e3911b3bf5aaa3a4d
 
-COCOAPODS: 0.37.1
+COCOAPODS: 0.39.0

@@ -134,7 +134,7 @@
         
         SEL selector = [invocation selector];
         
-        if (![CDProtocol protocol:self.proxyProtocol isContainSelector:selector]) {
+        if (![CDProtocol protocol:self.proxyProtocol isContainSelector:selector recursively:YES]) {
             NSLog(@"WARNING : try forward invocation with selector %@ not contained in protocol %@", NSStringFromSelector(selector), NSStringFromProtocol(self.proxyProtocol));
             return;
         }

@@ -8,7 +8,7 @@
 
 #import "TableViewController.h"
 #import "TableViewCell.h"
-#import <CrutchKit/Proxying/CDProxying.h>
+#import <CrutchKit/CDProxying.h>
 #import <CrutchKit/Runtime/CDRuntime.h>
 #import <CrutchKit/Helpers/CDHelpers.h>
 

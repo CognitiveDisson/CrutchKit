@@ -21,6 +21,6 @@ EXTERNAL SOURCES:
     :path: ../../
 
 SPEC CHECKSUMS:
-  CrutchKit: b46778cad4c8930f0f0fe37e3911b3bf5aaa3a4d
+  CrutchKit: 5e2da7e29161f4f54f575b1ca5f12b67a099d502
 
 COCOAPODS: 0.39.0

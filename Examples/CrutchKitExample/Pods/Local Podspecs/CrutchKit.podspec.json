@@ -19,10 +19,8 @@
   "subspecs": [
     {
       "name": "Proxying",
-      "source_files": [
-        "Classes/Proxying",
-        "Classes/Proxying/**/*.{h,m}"
-      ],
+      "header_mappings_dir": "Classes/Proxying",
+      "source_files": "Classes/Proxying/**/*.{h,m}",
       "dependencies": {
         "CrutchKit/Runtime": [
 

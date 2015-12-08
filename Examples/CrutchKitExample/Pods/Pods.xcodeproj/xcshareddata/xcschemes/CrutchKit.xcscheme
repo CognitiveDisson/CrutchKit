@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '3546E82A4B6B459B9DA8102D'
+               BlueprintIdentifier = '6E52EE790E42BA04043D8E80'
                BlueprintName = 'CrutchKit'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libCrutchKit.a'>

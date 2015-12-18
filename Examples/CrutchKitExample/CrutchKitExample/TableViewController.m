@@ -20,7 +20,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self cd_startObserveProtocol:@protocol(TableViewCellDelegate)];
+    [self cd_startObserveProtocols:@[@protocol(TableViewCellDelegate),
+                                     @protocol(AnotherTableViewCellDelegate)]];
     [self printProtocols];
     
 }
@@ -63,11 +64,15 @@
 }
 
 - (void)didPressButton:(UIButton *)button onCell:(TableViewCell *)cell {
-    self.navigationController.navigationBar.barTintColor = [UIColor randomColor];
+    self.navigationController.navigationBar.barTintColor = [[UIColor randomColor] colorWithAlphaComponent:0.5];
 }
 
 - (void)didSwitch:(UISwitch *)sender {
     self.view.backgroundColor = sender.isOn ? [UIColor redColor] : [UIColor whiteColor];
+}
+
+- (void)didChangedSliderValue:(CGFloat)value {
+    self.navigationController.navigationBar.alpha = value;
 }
 
 - (void)printProtocols {

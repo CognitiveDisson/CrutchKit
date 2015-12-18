@@ -14,6 +14,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *button;
 
 @property (weak, nonatomic) id<TableViewCellDelegate> actionProxy;
+@property (weak, nonatomic) id<AnotherTableViewCellDelegate> anotherActionProxy;
 
 @end
 
@@ -21,7 +22,8 @@
 
 - (void)didMoveToSuperview {
     [super didMoveToSuperview];
-    self.actionProxy = (id<TableViewCellDelegate>)[self cd_proxyForProtocol:@protocol(TableViewCellDelegate)];
+    self.actionProxy = [[self cd_proxyForProtocol:@protocol(TableViewCellDelegate)] unwrap];
+    self.anotherActionProxy = [[self cd_proxyForProtocol:@protocol(AnotherTableViewCellDelegate)] unwrap];
 }
 
 - (IBAction)buttonAction:(id)sender {
@@ -38,7 +40,9 @@
 }
 
 
-- (IBAction)changedSliderValue:(id)sender {
+- (IBAction)changedSliderValue:(UISlider *)sender {
+ 
+    [self.anotherActionProxy didChangedSliderValue:sender.value];
     
 }
 @end

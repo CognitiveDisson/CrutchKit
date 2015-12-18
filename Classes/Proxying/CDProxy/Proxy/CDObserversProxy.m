@@ -7,40 +7,45 @@
 //
 
 #import "CDObserversProxy.h"
-#import "UIApplication+CDProxying.h"
+#import "CDProxyDefinition.h"
+#import "CDObserver.h"
 #import "CDProtocol.h"
 #import "CDSelector.h"
+#import "UIApplication+CDProxying.h"
 #import <objc/runtime.h>
 
 @interface CDObserversProxy ()
 
-@property (strong, nonatomic) NSHashTable *observers;
-@property (strong, nonatomic, readwrite) Protocol *proxyProtocol;
+@property (strong, nonatomic) CDProxyDefinition *definition;
 
 @end
 
 @implementation CDObserversProxy
 
-- (instancetype)initWithProtocol:(Protocol *)protocol
-                       observers:(NSArray *)observers {
+- (instancetype)initWithDefinition:(CDProxyDefinition *)definition {
     
     self = [super init];
     
     if (self) {
-        
-        _proxyProtocol = protocol;
-        
-        _observers = [NSHashTable hashTableWithOptions:NSPointerFunctionsWeakMemory];
-        
-        for (id observer in observers) {
-
-            [self addObserver:observer];
-            
-        }
-        
+        _definition = definition;
     }
     
     return self;
+}
+
+- (instancetype)initWithProtocols:(NSArray *)protocols
+                        observers:(NSArray *)observers {
+    
+    CDProxyDefinition *definition = [CDProxyDefinition definitionWithProtocols:protocols
+                                                                     observers:observers];
+    return [self initWithDefinition:definition];
+    
+}
+
+- (instancetype)initWithProtocol:(Protocol *)protocol
+                       observers:(NSArray *)observers {
+    return [self initWithProtocols:@[protocol]
+                         observers:observers];
 }
 
 + (instancetype)observersProxyWithProtocol:(Protocol *)protocol
@@ -50,41 +55,44 @@
                                 observers:observers];
 }
 
++ (instancetype)observersProxyWithProtocols:(NSArray *)protocols
+                                  observers:(NSArray *)observers {
+    return [[self alloc] initWithProtocols:protocols
+                                 observers:observers];
+}
+
 + (instancetype)observersProxyForSender:(UIResponder *)sender
                                protocol:(Protocol *)protocol {
     return [[UIApplication sharedApplication] observersProxyForProtocol:protocol
                                                               forSender:sender];
 }
 
-- (id)unwrapProtocol {
-    return self;
-}
-
 - (BOOL)respondsToSelector:(SEL)selector
               fromProtocol:(Protocol *)protocol
                 fromSender:(id)sender {
-    return [CDProtocol protocol:self.proxyProtocol isConformsToProtocol:protocol];
+    
+    for (Protocol *protocol in [self.definition proxyProtocols]) {
+        if ([CDProtocol protocol:protocol isConformsToProtocol:protocol]) {
+            return YES;
+        }
+    }
+    return NO;
+}
+
+- (id)unwrap {
+    return self;
+}
+
+- (NSArray *)proxyProtocols {
+    return [self.definition proxyProtocols];
 }
 
 - (void)addObserver:(id<CDObserver>)observer {
-    
-    @synchronized(self) {
-        
-        NSAssert([observer conformsToProtocol:self.proxyProtocol], @"observer %@ not conform to protocol %@", observer, self.proxyProtocol);
-        [_observers addObject:observer];
-        
-    }
-    
+    [self.definition addObserver:observer];
 }
 
 - (void)removeObserver:(id)observer {
-    
-    @synchronized(self) {
-        
-        [_observers removeObject:observer];
-        
-    }
-    
+    [self.definition removeObserver:observer];
 }
 
 - (BOOL)respondsToSelector:(SEL)selector {
@@ -94,7 +102,7 @@
             return YES;
         }
         
-        NSArray *observers = [self.observers copy];
+        NSArray *observers = [self.definition proxyObservers];
         for (id observer in observers) {
             if ([observer respondsToSelector:selector]) {
                 return YES;
@@ -110,7 +118,7 @@
     
     @synchronized(self) {
         
-        NSArray *observers = [self.observers copy];
+        NSArray *observers = [self.definition proxyObservers];
         
         for (id observer in observers) {
             
@@ -134,12 +142,20 @@
         
         SEL selector = [invocation selector];
         
-        if (![CDProtocol protocol:self.proxyProtocol isContainSelector:selector recursively:YES]) {
-            NSLog(@"WARNING : try forward invocation with selector %@ not contained in protocol %@", NSStringFromSelector(selector), NSStringFromProtocol(self.proxyProtocol));
+        BOOL isContainSelector = NO;
+        
+        for (Protocol *protocol in [self.definition proxyProtocols]) {
+            if ([CDProtocol protocol:protocol isContainSelector:selector recursively:YES]) {
+                isContainSelector = YES;
+            }
+        }
+        
+        if (!isContainSelector) {
+            NSLog(@"WARNING : try forward invocation with selector %@ not contained in protocols %@", NSStringFromSelector(selector), [self.definition proxyProtocols]);
             return;
         }
         
-        NSArray *observers = [self.observers copy];
+        NSArray *observers = [self.definition proxyObservers];
         
         for (id<CDObserver> observer in observers) {
             
@@ -153,7 +169,7 @@
                 
                 [invocation invokeWithTarget:observer];
                 
-                if (self.onlyFirstRespondedObserver) {
+                if (self.definition.onlyFirstRespondedObserver) {
                     return;
                 }
                 

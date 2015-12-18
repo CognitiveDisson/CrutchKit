@@ -17,8 +17,15 @@
 - (void)didPressButton:(UIButton *)button
                 onCell:(TableViewCell *)cell;
 
+- (void)didSwitch:(UISwitch *)sender;
+
+
+@end
+
+@protocol AnotherTableViewCellDelegate <NSObject>
+
 @optional
 
-- (void)didSwitch:(UISwitch *)sender;
+- (void)didChangedSliderValue:(CGFloat)value;
 
 @end

@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		0002EF690CCD45DCAED04874 /* libPods-CrutchKitExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EEAD2718EFE314D4437B3982 /* libPods-CrutchKitExample.a */; };
 		AE43128F18F910DFAEAB565D /* libPods-CrutchKitExampleTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EBEB50098ADA09A0300BE2C3 /* libPods-CrutchKitExampleTests.a */; };
+		DD2B83511C20648500C02CD2 /* CDObserverProxyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DD2B83501C20648500C02CD2 /* CDObserverProxyTests.m */; };
+		DD2B83541C20655B00C02CD2 /* InvocationHandlerObject.m in Sources */ = {isa = PBXBuildFile; fileRef = DD2B83531C20655B00C02CD2 /* InvocationHandlerObject.m */; };
 		DD70C08E1B1DB68A0096AE1B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DD70C08D1B1DB68A0096AE1B /* main.m */; };
 		DD70C0911B1DB68A0096AE1B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DD70C0901B1DB68A0096AE1B /* AppDelegate.m */; };
 		DD70C0941B1DB68A0096AE1B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD70C0931B1DB68A0096AE1B /* ViewController.m */; };
@@ -34,6 +36,9 @@
 		20F99E7477829A95D59D1411 /* Pods-CrutchKitExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CrutchKitExampleTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CrutchKitExampleTests/Pods-CrutchKitExampleTests.release.xcconfig"; sourceTree = "<group>"; };
 		7DE53511CC88C225046820E1 /* Pods-CrutchKitExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CrutchKitExampleTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CrutchKitExampleTests/Pods-CrutchKitExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
 		CABFF275B95F10250CFE2119 /* Pods-CrutchKitExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CrutchKitExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-CrutchKitExample/Pods-CrutchKitExample.release.xcconfig"; sourceTree = "<group>"; };
+		DD2B83501C20648500C02CD2 /* CDObserverProxyTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDObserverProxyTests.m; sourceTree = "<group>"; };
+		DD2B83521C20655B00C02CD2 /* InvocationHandlerObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InvocationHandlerObject.h; sourceTree = "<group>"; };
+		DD2B83531C20655B00C02CD2 /* InvocationHandlerObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InvocationHandlerObject.m; sourceTree = "<group>"; };
 		DD70C0881B1DB68A0096AE1B /* CrutchKitExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CrutchKitExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD70C08C1B1DB68A0096AE1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DD70C08D1B1DB68A0096AE1B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -148,7 +153,10 @@
 			isa = PBXGroup;
 			children = (
 				DD70C0A71B1DB68A0096AE1B /* CrutchKitExampleTests.m */,
+				DD2B83501C20648500C02CD2 /* CDObserverProxyTests.m */,
 				DD70C0A51B1DB68A0096AE1B /* Supporting Files */,
+				DD2B83521C20655B00C02CD2 /* InvocationHandlerObject.h */,
+				DD2B83531C20655B00C02CD2 /* InvocationHandlerObject.m */,
 			);
 			path = CrutchKitExampleTests;
 			sourceTree = "<group>";
@@ -373,6 +381,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD70C0A81B1DB68A0096AE1B /* CrutchKitExampleTests.m in Sources */,
+				DD2B83541C20655B00C02CD2 /* InvocationHandlerObject.m in Sources */,
+				DD2B83511C20648500C02CD2 /* CDObserverProxyTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

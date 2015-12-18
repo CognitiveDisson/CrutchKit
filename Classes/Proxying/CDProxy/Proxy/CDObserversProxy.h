@@ -10,8 +10,13 @@
 #import "CDProxy.h"
 
 @protocol CDObserver;
+@class CDProxyDefinition;
 
 @interface CDObserversProxy : UIResponder <CDProxy>
+
+- (instancetype)initWithDefinition:(CDProxyDefinition *)definition;
+
++ (instancetype)observersProxyWithDefinition:(CDProxyDefinition *)definition;
 
 - (instancetype)initWithProtocol:(Protocol *)protocol
                        observers:(NSArray *)observers;
@@ -19,18 +24,18 @@
 + (instancetype)observersProxyWithProtocol:(Protocol *)protocol
                        observers:(NSArray *)observers;
 
+- (instancetype)initWithProtocols:(NSArray *)protocols
+                        observers:(NSArray *)observers;
+
++ (instancetype)observersProxyWithProtocols:(NSArray *)protocols
+                                  observers:(NSArray *)observers;
+
 + (instancetype)observersProxyForSender:(UIResponder *)sender
                                protocol:(Protocol *)protocol;
 
-@property (assign, nonatomic) BOOL onlyFirstRespondedObserver;
+
 
 - (void)addObserver:(id<CDObserver>)observer;
 - (void)removeObserver:(id<CDObserver>)observer;
-
-@end
-
-@protocol CDObserver <NSObject>
-@optional
-- (BOOL)wantObserveSelector:(SEL)selector;
 
 @end

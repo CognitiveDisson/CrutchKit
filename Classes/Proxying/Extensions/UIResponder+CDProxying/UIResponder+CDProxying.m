@@ -45,8 +45,8 @@
         
         id<CDProxy> proxy = responder.cd_defaultProxy;
         
-        for (Protocol *protocol in proxy.proxyProtocols) {
-            if ([CDProtocol protocol:protocol isConformsToProtocol:protocol]) {
+        for (Protocol *responderDefaultProxy in proxy.proxyProtocols) {
+            if ([CDProtocol protocol:responderDefaultProxy isConformsToProtocol:protocol]) {
                 return proxy;
             }
         }

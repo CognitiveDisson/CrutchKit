@@ -8,11 +8,15 @@
 
 #import "TableViewController.h"
 #import "TableViewCell.h"
+#import "ScrollingHandler.h"
 #import <CrutchKit/CDProxying.h>
 #import <CrutchKit/Runtime/CDRuntime.h>
 #import <CrutchKit/Helpers/CDHelpers.h>
 
 @interface TableViewController () <TableViewCellDelegate>
+
+@property (strong, nonatomic) ScrollingHandler *scrollingHandler;
+@property (strong, nonatomic) CDObserversProxy *tableViewDelegateProxy;
 
 @end
 
@@ -20,6 +24,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.scrollingHandler = [ScrollingHandler new];
+    
+    self.tableViewDelegateProxy = [CDObserversProxy observersProxyWithProtocols:@[@protocol(UITableViewDelegate),@protocol(UIScrollViewDelegate)]
+                                                                      observers:@[self, self.scrollingHandler]];
+    
+    self.tableView.delegate = [self.tableViewDelegateProxy unwrap];
+    
     [self cd_startObserveProtocols:@[@protocol(TableViewCellDelegate),
                                      @protocol(AnotherTableViewCellDelegate)]];
     [self printProtocols];
@@ -52,6 +64,7 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    NSLog(@"did select");
 //    UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
 //    NSArray *responderChain = [cell cd_responderChain];
 //    NSMutableString *string =  [NSMutableString new];

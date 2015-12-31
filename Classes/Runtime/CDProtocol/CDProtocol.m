@@ -80,6 +80,8 @@
                                                              objCTypes:methods[i].types];
             [selectors addObject:selector];
         }
+        
+        free(methods);
     }
     
     return [selectors copy];

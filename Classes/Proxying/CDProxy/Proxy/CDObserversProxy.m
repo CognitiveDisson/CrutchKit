@@ -48,6 +48,10 @@
                          observers:observers];
 }
 
++ (instancetype)observersProxyWithDefinition:(CDProxyDefinition *)definition {
+    return [[self alloc] initWithDefinition:definition];
+}
+
 + (instancetype)observersProxyWithProtocol:(Protocol *)protocol
                                  observers:(NSArray *)observers {
     
@@ -73,7 +77,12 @@
     
     for (Protocol *protocol in [self.definition proxyProtocols]) {
         if ([CDProtocol protocol:protocol isConformsToProtocol:protocol]) {
-            return YES;
+            NSArray *observers = [self.definition proxyObservers];
+            for (id observer in observers) {
+                if ([observer respondsToSelector:selector]) {
+                    return YES;
+                }
+            }
         }
     }
     return NO;

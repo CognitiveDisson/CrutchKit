@@ -56,6 +56,30 @@
     return nil;
 }
 
+- (id<CDProxy>)cd_proxyForProtocol:(Protocol *)protocol
+                          selector:(SEL)selector {
+    NSArray *responderChain = [self cd_responderChain];
+    
+    for (UIResponder *responder in responderChain) {
+        
+        id<CDProxy> proxy = responder.cd_defaultProxy;
+        
+        for (Protocol *responderDefaultProxy in proxy.proxyProtocols) {
+            BOOL conformToProtocol = [CDProtocol protocol:responderDefaultProxy
+                                     isConformsToProtocol:protocol];
+            BOOL respondToSelector = [proxy respondsToSelector:selector
+                                                  fromProtocol:protocol
+                                                    fromSender:self];
+            if (conformToProtocol && respondToSelector) {
+                return proxy;
+            }
+        }
+        
+    }
+    
+    return nil;
+}
+
 - (NSArray *)cd_responderChain {
     UIResponder *responder = self;
     NSMutableArray *responders = [NSMutableArray arrayWithObject:responder];

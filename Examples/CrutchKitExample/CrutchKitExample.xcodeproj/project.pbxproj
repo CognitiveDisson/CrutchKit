@@ -11,6 +11,7 @@
 		AE43128F18F910DFAEAB565D /* libPods-CrutchKitExampleTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EBEB50098ADA09A0300BE2C3 /* libPods-CrutchKitExampleTests.a */; };
 		DD2B83511C20648500C02CD2 /* CDObserverProxyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DD2B83501C20648500C02CD2 /* CDObserverProxyTests.m */; };
 		DD2B83541C20655B00C02CD2 /* InvocationHandlerObject.m in Sources */ = {isa = PBXBuildFile; fileRef = DD2B83531C20655B00C02CD2 /* InvocationHandlerObject.m */; };
+		DD6E5FED1C32E26400C7C64C /* ScrollingHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = DD6E5FEC1C32E26400C7C64C /* ScrollingHandler.m */; };
 		DD70C08E1B1DB68A0096AE1B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DD70C08D1B1DB68A0096AE1B /* main.m */; };
 		DD70C0911B1DB68A0096AE1B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DD70C0901B1DB68A0096AE1B /* AppDelegate.m */; };
 		DD70C0941B1DB68A0096AE1B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD70C0931B1DB68A0096AE1B /* ViewController.m */; };
@@ -39,6 +40,8 @@
 		DD2B83501C20648500C02CD2 /* CDObserverProxyTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDObserverProxyTests.m; sourceTree = "<group>"; };
 		DD2B83521C20655B00C02CD2 /* InvocationHandlerObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InvocationHandlerObject.h; sourceTree = "<group>"; };
 		DD2B83531C20655B00C02CD2 /* InvocationHandlerObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InvocationHandlerObject.m; sourceTree = "<group>"; };
+		DD6E5FEB1C32E26400C7C64C /* ScrollingHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollingHandler.h; sourceTree = "<group>"; };
+		DD6E5FEC1C32E26400C7C64C /* ScrollingHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollingHandler.m; sourceTree = "<group>"; };
 		DD70C0881B1DB68A0096AE1B /* CrutchKitExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CrutchKitExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD70C08C1B1DB68A0096AE1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DD70C08D1B1DB68A0096AE1B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -136,6 +139,8 @@
 				DD70C08B1B1DB68A0096AE1B /* Supporting Files */,
 				DDE688041B246A5400210914 /* TableViewCell.h */,
 				DDE688051B246A5400210914 /* TableViewCell.m */,
+				DD6E5FEB1C32E26400C7C64C /* ScrollingHandler.h */,
+				DD6E5FEC1C32E26400C7C64C /* ScrollingHandler.m */,
 			);
 			path = CrutchKitExample;
 			sourceTree = "<group>";
@@ -368,6 +373,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD6E5FED1C32E26400C7C64C /* ScrollingHandler.m in Sources */,
 				DD70C0941B1DB68A0096AE1B /* ViewController.m in Sources */,
 				DDE687F91B24501E00210914 /* TableViewController.m in Sources */,
 				DD70C0911B1DB68A0096AE1B /* AppDelegate.m in Sources */,

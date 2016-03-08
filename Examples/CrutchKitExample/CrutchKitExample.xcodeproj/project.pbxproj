@@ -10,7 +10,7 @@
 		0002EF690CCD45DCAED04874 /* libPods-CrutchKitExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EEAD2718EFE314D4437B3982 /* libPods-CrutchKitExample.a */; };
 		AE43128F18F910DFAEAB565D /* libPods-CrutchKitExampleTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EBEB50098ADA09A0300BE2C3 /* libPods-CrutchKitExampleTests.a */; };
 		DD2B83511C20648500C02CD2 /* CDObserverProxyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DD2B83501C20648500C02CD2 /* CDObserverProxyTests.m */; };
-		DD2B83541C20655B00C02CD2 /* InvocationHandlerObject.m in Sources */ = {isa = PBXBuildFile; fileRef = DD2B83531C20655B00C02CD2 /* InvocationHandlerObject.m */; };
+		DD2B83541C20655B00C02CD2 /* CDInvocationRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = DD2B83531C20655B00C02CD2 /* CDInvocationRecorder.m */; };
 		DD6E5FED1C32E26400C7C64C /* ScrollingHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = DD6E5FEC1C32E26400C7C64C /* ScrollingHandler.m */; };
 		DD70C08E1B1DB68A0096AE1B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DD70C08D1B1DB68A0096AE1B /* main.m */; };
 		DD70C0911B1DB68A0096AE1B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DD70C0901B1DB68A0096AE1B /* AppDelegate.m */; };
@@ -19,6 +19,11 @@
 		DD70C0991B1DB68A0096AE1B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD70C0981B1DB68A0096AE1B /* Images.xcassets */; };
 		DD70C09C1B1DB68A0096AE1B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD70C09A1B1DB68A0096AE1B /* LaunchScreen.xib */; };
 		DD70C0A81B1DB68A0096AE1B /* CrutchKitExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DD70C0A71B1DB68A0096AE1B /* CrutchKitExampleTests.m */; };
+		DDB0C6911C6F3FC20016BFFD /* CDInvocationHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = DDB0C6901C6F3FC20016BFFD /* CDInvocationHandler.m */; };
+		DDB0C6941C6F427A0016BFFD /* CDInvocationArgument.m in Sources */ = {isa = PBXBuildFile; fileRef = DDB0C6931C6F427A0016BFFD /* CDInvocationArgument.m */; };
+		DDB0C69A1C6F46C60016BFFD /* NSException+CDInvocation.m in Sources */ = {isa = PBXBuildFile; fileRef = DDB0C6991C6F46C50016BFFD /* NSException+CDInvocation.m */; };
+		DDB0C69D1C6F50BB0016BFFD /* NSMethodSignature+CDInvocation.m in Sources */ = {isa = PBXBuildFile; fileRef = DDB0C69C1C6F50BB0016BFFD /* NSMethodSignature+CDInvocation.m */; };
+		DDB0C6A01C6F89090016BFFD /* CDInvocationContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = DDB0C69F1C6F89090016BFFD /* CDInvocationContainer.m */; };
 		DDE687F91B24501E00210914 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDE687F81B24501E00210914 /* TableViewController.m */; };
 		DDE688061B246A5400210914 /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DDE688051B246A5400210914 /* TableViewCell.m */; };
 /* End PBXBuildFile section */
@@ -38,8 +43,8 @@
 		7DE53511CC88C225046820E1 /* Pods-CrutchKitExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CrutchKitExampleTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CrutchKitExampleTests/Pods-CrutchKitExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
 		CABFF275B95F10250CFE2119 /* Pods-CrutchKitExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CrutchKitExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-CrutchKitExample/Pods-CrutchKitExample.release.xcconfig"; sourceTree = "<group>"; };
 		DD2B83501C20648500C02CD2 /* CDObserverProxyTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDObserverProxyTests.m; sourceTree = "<group>"; };
-		DD2B83521C20655B00C02CD2 /* InvocationHandlerObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InvocationHandlerObject.h; sourceTree = "<group>"; };
-		DD2B83531C20655B00C02CD2 /* InvocationHandlerObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InvocationHandlerObject.m; sourceTree = "<group>"; };
+		DD2B83521C20655B00C02CD2 /* CDInvocationRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDInvocationRecorder.h; sourceTree = "<group>"; };
+		DD2B83531C20655B00C02CD2 /* CDInvocationRecorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDInvocationRecorder.m; sourceTree = "<group>"; };
 		DD6E5FEB1C32E26400C7C64C /* ScrollingHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollingHandler.h; sourceTree = "<group>"; };
 		DD6E5FEC1C32E26400C7C64C /* ScrollingHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollingHandler.m; sourceTree = "<group>"; };
 		DD70C0881B1DB68A0096AE1B /* CrutchKitExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CrutchKitExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -55,6 +60,16 @@
 		DD70C0A11B1DB68A0096AE1B /* CrutchKitExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CrutchKitExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD70C0A61B1DB68A0096AE1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DD70C0A71B1DB68A0096AE1B /* CrutchKitExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CrutchKitExampleTests.m; sourceTree = "<group>"; };
+		DDB0C68F1C6F3FC20016BFFD /* CDInvocationHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDInvocationHandler.h; sourceTree = "<group>"; };
+		DDB0C6901C6F3FC20016BFFD /* CDInvocationHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDInvocationHandler.m; sourceTree = "<group>"; };
+		DDB0C6921C6F427A0016BFFD /* CDInvocationArgument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDInvocationArgument.h; sourceTree = "<group>"; };
+		DDB0C6931C6F427A0016BFFD /* CDInvocationArgument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDInvocationArgument.m; sourceTree = "<group>"; };
+		DDB0C6981C6F46C50016BFFD /* NSException+CDInvocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSException+CDInvocation.h"; sourceTree = "<group>"; };
+		DDB0C6991C6F46C50016BFFD /* NSException+CDInvocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSException+CDInvocation.m"; sourceTree = "<group>"; };
+		DDB0C69B1C6F50BB0016BFFD /* NSMethodSignature+CDInvocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMethodSignature+CDInvocation.h"; sourceTree = "<group>"; };
+		DDB0C69C1C6F50BB0016BFFD /* NSMethodSignature+CDInvocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMethodSignature+CDInvocation.m"; sourceTree = "<group>"; };
+		DDB0C69E1C6F89090016BFFD /* CDInvocationContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDInvocationContainer.h; sourceTree = "<group>"; };
+		DDB0C69F1C6F89090016BFFD /* CDInvocationContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDInvocationContainer.m; sourceTree = "<group>"; };
 		DDE687F71B24501E00210914 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
 		DDE687F81B24501E00210914 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 		DDE688041B246A5400210914 /* TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
@@ -160,8 +175,18 @@
 				DD70C0A71B1DB68A0096AE1B /* CrutchKitExampleTests.m */,
 				DD2B83501C20648500C02CD2 /* CDObserverProxyTests.m */,
 				DD70C0A51B1DB68A0096AE1B /* Supporting Files */,
-				DD2B83521C20655B00C02CD2 /* InvocationHandlerObject.h */,
-				DD2B83531C20655B00C02CD2 /* InvocationHandlerObject.m */,
+				DD2B83521C20655B00C02CD2 /* CDInvocationRecorder.h */,
+				DD2B83531C20655B00C02CD2 /* CDInvocationRecorder.m */,
+				DDB0C68F1C6F3FC20016BFFD /* CDInvocationHandler.h */,
+				DDB0C6901C6F3FC20016BFFD /* CDInvocationHandler.m */,
+				DDB0C6921C6F427A0016BFFD /* CDInvocationArgument.h */,
+				DDB0C6931C6F427A0016BFFD /* CDInvocationArgument.m */,
+				DDB0C6981C6F46C50016BFFD /* NSException+CDInvocation.h */,
+				DDB0C6991C6F46C50016BFFD /* NSException+CDInvocation.m */,
+				DDB0C69B1C6F50BB0016BFFD /* NSMethodSignature+CDInvocation.h */,
+				DDB0C69C1C6F50BB0016BFFD /* NSMethodSignature+CDInvocation.m */,
+				DDB0C69E1C6F89090016BFFD /* CDInvocationContainer.h */,
+				DDB0C69F1C6F89090016BFFD /* CDInvocationContainer.m */,
 			);
 			path = CrutchKitExampleTests;
 			sourceTree = "<group>";
@@ -387,7 +412,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD70C0A81B1DB68A0096AE1B /* CrutchKitExampleTests.m in Sources */,
-				DD2B83541C20655B00C02CD2 /* InvocationHandlerObject.m in Sources */,
+				DDB0C69A1C6F46C60016BFFD /* NSException+CDInvocation.m in Sources */,
+				DD2B83541C20655B00C02CD2 /* CDInvocationRecorder.m in Sources */,
+				DDB0C6941C6F427A0016BFFD /* CDInvocationArgument.m in Sources */,
+				DDB0C6A01C6F89090016BFFD /* CDInvocationContainer.m in Sources */,
+				DDB0C6911C6F3FC20016BFFD /* CDInvocationHandler.m in Sources */,
+				DDB0C69D1C6F50BB0016BFFD /* NSMethodSignature+CDInvocation.m in Sources */,
 				DD2B83511C20648500C02CD2 /* CDObserverProxyTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

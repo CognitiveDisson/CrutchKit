@@ -65,6 +65,15 @@
                                  observers:observers];
 }
 
++ (instancetype)observersProxyWithProtocols:(NSArray *)protocols
+                                  selectors:(NSArray *)selectors
+                                  observers:(NSArray *)observers {
+    CDProxyDefinition *definition = [CDProxyDefinition definitionWithProtocols:protocols
+                                                                     selectors:selectors
+                                                                     observers:observers];
+    return [[self alloc] initWithDefinition:definition];
+}
+
 + (instancetype)observersProxyForSender:(UIResponder *)sender
                                protocol:(Protocol *)protocol {
     return [[UIApplication sharedApplication] observersProxyForProtocol:protocol
@@ -92,8 +101,8 @@
     return self;
 }
 
-- (NSArray *)proxyProtocols {
-    return [self.definition proxyProtocols];
+- (CDProxyDefinition *)definition {
+    return _definition;
 }
 
 - (void)addObserver:(id<CDObserver>)observer {
@@ -150,6 +159,7 @@
     @synchronized(self) {
         
         SEL selector = [invocation selector];
+        NSString *stringSelector = NSStringFromSelector(selector);
         
         BOOL isContainSelector = NO;
         
@@ -159,8 +169,14 @@
             }
         }
         
+        for (NSString *proxySelector in [self.definition proxySelectors]) {
+            if ([proxySelector isEqualToString:stringSelector]) {
+                isContainSelector = YES;
+            }
+        }
+        
         if (!isContainSelector) {
-            NSLog(@"WARNING : try forward invocation with selector %@ not contained in protocols %@", NSStringFromSelector(selector), [self.definition proxyProtocols]);
+            NSLog(@"WARNING : try forward invocation with selector %@ not contained in protocols %@ and selectors %@", NSStringFromSelector(selector), [self.definition proxyProtocols], [self.definition proxySelectors]);
             return;
         }
         
@@ -190,6 +206,47 @@
 
 - (void)cd_emptySignatureSelector {
     
+}
+
+- (BOOL)proxyProtocol:(Protocol *)protocol {
+    for (Protocol *proxyProtocol in self.definition.proxyProtocols) {
+        if ([CDProtocol protocol:proxyProtocol isConformsToProtocol:protocol]) {
+            return YES;
+        }
+    }
+    return NO;
+}
+
+- (BOOL)proxyProtocol:(Protocol *)protocol
+             selector:(SEL)selector {
+    for (Protocol *proxyProtocol in self.definition.proxyProtocols) {
+        BOOL conformToProtocol = [CDProtocol protocol:proxyProtocol
+                                 isConformsToProtocol:protocol];
+        BOOL respondToSelector = [self respondsToSelector:selector
+                                              fromProtocol:protocol
+                                                fromSender:self];
+        if (conformToProtocol && respondToSelector) {
+            return YES;
+        }
+    }
+    return NO;
+}
+
+- (BOOL)proxySelector:(SEL)selector {
+    for (Protocol *proxyProtocol in self.definition.proxyProtocols) {
+        if ([CDProtocol protocol:proxyProtocol
+               isContainSelector:selector
+                     recursively:NO]) {
+            return YES;
+        }
+    }
+    NSString *stringSelector = NSStringFromSelector(selector);
+    for (NSString *proxySelectors in self.definition.proxySelectors) {
+        if ([proxySelectors isEqualToString:stringSelector]) {
+            return YES;
+        }
+    }
+    return NO;
 }
 
 @end

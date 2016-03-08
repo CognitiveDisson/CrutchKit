@@ -17,10 +17,19 @@
 + (instancetype)definitionWithProtocols:(NSArray *)protocols
                               observers:(NSArray *)observers;
 
++ (instancetype)definitionWithProtocols:(NSArray *)protocols
+                              selectors:(NSArray *)selectors
+                              observers:(NSArray *)observers;
+
++ (instancetype)definitionWithSelector:(SEL)selector;
+
++ (instancetype)definitionWithSelectors:(NSArray *)selectors;
+
 @property (assign, nonatomic) BOOL onlyFirstRespondedObserver;
 
 - (NSArray *)proxyObservers;
 - (NSArray *)proxyProtocols;
+- (NSArray *)proxySelectors;
 
 - (void)addObserver:(id<CDObserver>)observer;
 

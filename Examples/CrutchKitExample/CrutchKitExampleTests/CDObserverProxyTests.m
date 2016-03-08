@@ -7,11 +7,11 @@
 //
 
 #import <XCTest/XCTest.h>
-#import <CrutchKit/CDProxying.h>
+#import <CDProxying.h>
+#import "CDInvocationHandler.h"
+#import "CDInvocationArgument.h"
 
 @interface CDObserverProxyTests : XCTestCase
-
-@property (strong, nonatomic) CDObserversProxy *proxy;
 
 @end
 
@@ -22,20 +22,97 @@
 }
 
 - (void)tearDown {
-    // Put teardown code here. This method is called after the invocation of each test method in the class.
     [super tearDown];
 }
 
-- (void)testExample {
-    // This is an example of a functional test case.
-    // Use XCTAssert and related functions to verify your tests produce the correct results.
+- (void)testProxying {
+    //giwen
+    Protocol *protocol = @protocol(UITableViewDelegate);
+    id mockObserver = [[CDInvocationHandler alloc] initWithProtocol:protocol];
+    [[mockObserver expect] tableView:CDArgAny estimatedHeightForFooterInSection:5];
+    id proxy = [CDObserversProxy observersProxyWithProtocol:protocol
+                                                  observers:@[mockObserver]];
+    //when
+    [proxy tableView:[UITableView new] estimatedHeightForFooterInSection:5];
+    
+    //then
+    [mockObserver performVerification];
 }
 
-- (void)testPerformanceExample {
-    // This is an example of a performance test case.
-    [self measureBlock:^{
-        // Put the code you want to measure the time of here.
-    }];
+- (void)testProxyingToMeny {
+    //giwen
+    Protocol *protocol = @protocol(UITableViewDelegate);
+    id mockObserverFirst = CDProtcolHandler(protocol);
+    [[mockObserverFirst expect] tableView:CDArgAny estimatedHeightForFooterInSection:5];
+    id mockObserverSecond = CDProtcolHandler(protocol);
+    [[mockObserverSecond expect] tableView:CDArgAny estimatedHeightForFooterInSection:5];
+    id proxy = [CDObserversProxy observersProxyWithProtocol:protocol
+                                                  observers:@[mockObserverFirst,
+                                                              mockObserverSecond]];
+    //when
+    [proxy tableView:[UITableView new] estimatedHeightForFooterInSection:5];
+    
+    //then
+    [mockObserverFirst performVerification];
+    [mockObserverSecond performVerification];
+}
+
+- (void)testProxyinDistributively {
+    //giwen
+    Protocol *protocol = @protocol(UITableViewDelegate);
+    id mockObserverFirst = CDProtcolHandler(protocol);
+    [[mockObserverFirst expect] tableView:CDArgAny estimatedHeightForFooterInSection:5];
+    [[mockObserverFirst expect] tableView:CDArgAny viewForHeaderInSection:0];
+    
+    NSString *selector = NSStringFromSelector(@selector(tableView:viewForHeaderInSection:));
+    id mockObserverSecond = [[CDInvocationHandler alloc] initWithProtocol:protocol
+                                                                selectors:@[selector]];
+    [[mockObserverSecond reject] tableView:CDArgAny estimatedHeightForFooterInSection:5];
+    [[mockObserverSecond expect] tableView:CDArgAny viewForHeaderInSection:0];
+    
+    id proxy = [CDObserversProxy observersProxyWithProtocol:protocol
+                                                  observers:@[mockObserverFirst,
+                                                              mockObserverSecond]];
+    //when
+    [proxy tableView:[UITableView new] estimatedHeightForFooterInSection:5];
+    [proxy tableView:[UITableView new] viewForHeaderInSection:0];
+    
+    //then
+    [mockObserverFirst performVerification];
+    [mockObserverSecond performVerification];
+}
+
+- (void)testProxyinManyProtocolsToOneObserver {
+    //giwen
+    Protocol *protocol = @protocol(UITableViewDelegate);
+    id mockObserver = CDProtcolHandler(protocol);
+    [[mockObserver expect] tableView:CDArgAny estimatedHeightForFooterInSection:5];
+    [[mockObserver expect] tableView:CDArgAny viewForHeaderInSection:0];
+    
+    id proxy = [CDObserversProxy observersProxyWithProtocol:protocol
+                                                  observers:@[mockObserver]];
+    //when
+    [proxy tableView:[UITableView new] estimatedHeightForFooterInSection:5];
+    [proxy tableView:[UITableView new] viewForHeaderInSection:0];
+    
+    //then
+    [mockObserver performVerification];
+}
+
+- (void)testProxySelector {
+    //giwen
+    Protocol *protocol = @protocol(UITableViewDelegate);
+    id mockObserver = CDProtcolHandler(protocol);
+    [[mockObserver expect] tableView:CDArgAny estimatedHeightForFooterInSection:5];
+    
+    id proxy = [CDObserversProxy observersProxyWithProtocols:nil
+                                                   selectors:@[NSStringFromSelector(@selector(tableView:estimatedHeightForFooterInSection:))]
+                                                   observers:@[mockObserver]];
+    //when
+    [proxy tableView:[UITableView new] estimatedHeightForFooterInSection:5];
+    
+    //then
+    [mockObserver performVerification];
 }
 
 @end

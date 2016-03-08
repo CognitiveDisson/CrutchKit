@@ -22,7 +22,7 @@
                        observers:(NSArray *)observers;
 
 + (instancetype)observersProxyWithProtocol:(Protocol *)protocol
-                       observers:(NSArray *)observers;
+                                 observers:(NSArray *)observers;
 
 - (instancetype)initWithProtocols:(NSArray *)protocols
                         observers:(NSArray *)observers;
@@ -30,10 +30,14 @@
 + (instancetype)observersProxyWithProtocols:(NSArray *)protocols
                                   observers:(NSArray *)observers;
 
++ (instancetype)observersProxyWithProtocols:(NSArray *)protocols
+                                  selectors:(NSArray *)selectors
+                                  observers:(NSArray *)observers;
+
+// find
+
 + (instancetype)observersProxyForSender:(UIResponder *)sender
                                protocol:(Protocol *)protocol;
-
-
 
 - (void)addObserver:(id<CDObserver>)observer;
 - (void)removeObserver:(id<CDObserver>)observer;

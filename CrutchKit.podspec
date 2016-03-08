@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "CrutchKit"
-  s.version      = "0.0.10"
+  s.version      = "0.0.11"
   s.summary      = "CrutchKit is a set of crutches for IOS development."
   s.homepage     = "https://github.com/CognitiveDisson/CrutchKit"
   s.license      = "MIT"

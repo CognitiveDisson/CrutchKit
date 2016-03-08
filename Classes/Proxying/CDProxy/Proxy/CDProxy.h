@@ -8,13 +8,22 @@
 
 #import <Foundation/Foundation.h>
 
+@class CDProxyDefinition;
+
 @protocol CDProxy <NSObject>
 
 - (BOOL)respondsToSelector:(SEL)selector
               fromProtocol:(Protocol *)protocol
                 fromSender:(id)sender;
 
-- (NSArray *)proxyProtocols;
+- (CDProxyDefinition *)definition;
+
+- (BOOL)proxyProtocol:(Protocol *)protocol;
+
+- (BOOL)proxyProtocol:(Protocol *)protocol
+             selector:(SEL)selector;
+
+- (BOOL)proxySelector:(SEL)selector;
 
 - (id)unwrap;
 

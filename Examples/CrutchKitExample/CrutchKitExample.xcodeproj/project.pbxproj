@@ -18,7 +18,6 @@
 		DD70C0971B1DB68A0096AE1B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD70C0951B1DB68A0096AE1B /* Main.storyboard */; };
 		DD70C0991B1DB68A0096AE1B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD70C0981B1DB68A0096AE1B /* Images.xcassets */; };
 		DD70C09C1B1DB68A0096AE1B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD70C09A1B1DB68A0096AE1B /* LaunchScreen.xib */; };
-		DD70C0A81B1DB68A0096AE1B /* CrutchKitExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DD70C0A71B1DB68A0096AE1B /* CrutchKitExampleTests.m */; };
 		DDB0C6911C6F3FC20016BFFD /* CDInvocationHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = DDB0C6901C6F3FC20016BFFD /* CDInvocationHandler.m */; };
 		DDB0C6941C6F427A0016BFFD /* CDInvocationArgument.m in Sources */ = {isa = PBXBuildFile; fileRef = DDB0C6931C6F427A0016BFFD /* CDInvocationArgument.m */; };
 		DDB0C69A1C6F46C60016BFFD /* NSException+CDInvocation.m in Sources */ = {isa = PBXBuildFile; fileRef = DDB0C6991C6F46C50016BFFD /* NSException+CDInvocation.m */; };
@@ -59,7 +58,6 @@
 		DD70C09B1B1DB68A0096AE1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		DD70C0A11B1DB68A0096AE1B /* CrutchKitExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CrutchKitExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD70C0A61B1DB68A0096AE1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DD70C0A71B1DB68A0096AE1B /* CrutchKitExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CrutchKitExampleTests.m; sourceTree = "<group>"; };
 		DDB0C68F1C6F3FC20016BFFD /* CDInvocationHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDInvocationHandler.h; sourceTree = "<group>"; };
 		DDB0C6901C6F3FC20016BFFD /* CDInvocationHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDInvocationHandler.m; sourceTree = "<group>"; };
 		DDB0C6921C6F427A0016BFFD /* CDInvocationArgument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDInvocationArgument.h; sourceTree = "<group>"; };
@@ -172,7 +170,6 @@
 		DD70C0A41B1DB68A0096AE1B /* CrutchKitExampleTests */ = {
 			isa = PBXGroup;
 			children = (
-				DD70C0A71B1DB68A0096AE1B /* CrutchKitExampleTests.m */,
 				DD2B83501C20648500C02CD2 /* CDObserverProxyTests.m */,
 				DD70C0A51B1DB68A0096AE1B /* Supporting Files */,
 				DD2B83521C20655B00C02CD2 /* CDInvocationRecorder.h */,
@@ -249,7 +246,7 @@
 		DD70C0801B1DB6890096AE1B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0630;
+				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = cognitivedisson;
 				TargetAttributes = {
 					DD70C0871B1DB68A0096AE1B = {
@@ -411,7 +408,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD70C0A81B1DB68A0096AE1B /* CrutchKitExampleTests.m in Sources */,
 				DDB0C69A1C6F46C60016BFFD /* NSException+CDInvocation.m in Sources */,
 				DD2B83541C20655B00C02CD2 /* CDInvocationRecorder.m in Sources */,
 				DDB0C6941C6F427A0016BFFD /* CDInvocationArgument.m in Sources */,
@@ -473,6 +469,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -541,6 +538,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CrutchKitExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "cognitivedisson.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -552,6 +550,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CrutchKitExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "cognitivedisson.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -571,6 +570,7 @@
 				);
 				INFOPLIST_FILE = CrutchKitExampleTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "cognitivedisson.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CrutchKitExample.app/CrutchKitExample";
 			};
@@ -587,6 +587,7 @@
 				);
 				INFOPLIST_FILE = CrutchKitExampleTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "cognitivedisson.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CrutchKitExample.app/CrutchKitExample";
 			};

@@ -57,22 +57,7 @@
         return [self.selectors containsObject:selector];
     }
     
-    static BOOL isReqVals[4] = {NO, NO, YES, YES};
-    static BOOL isInstanceVals[4] = {NO, YES, NO, YES};
-    struct objc_method_description methodDescription = {NULL, NULL};
-    
-    for(int i = 0; i < 4; i++) {
-        methodDescription = protocol_getMethodDescription(self.protocol,
-                                                          aSelector,
-                                                          isReqVals[i],
-                                                          isInstanceVals[i]);
-        
-        if(methodDescription.types != NULL && methodDescription.name != NULL){
-            return YES;
-        }
-    }
-    
-    return NO;
+    return [NSMethodSignature cd_signatureWithProtocol:self.protocol selector:aSelector] != nil;
 }
 
 - (NSMethodSignature *)methodSignatureForSelector:(SEL)selector {

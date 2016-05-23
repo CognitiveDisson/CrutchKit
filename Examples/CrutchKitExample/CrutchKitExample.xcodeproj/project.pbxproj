@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0002EF690CCD45DCAED04874 /* libPods-CrutchKitExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EEAD2718EFE314D4437B3982 /* libPods-CrutchKitExample.a */; };
+		9E2F10E51CF0F9E500C0A109 /* UIResponderProxyingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E2F10E41CF0F9E500C0A109 /* UIResponderProxyingTests.m */; };
 		AE43128F18F910DFAEAB565D /* libPods-CrutchKitExampleTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EBEB50098ADA09A0300BE2C3 /* libPods-CrutchKitExampleTests.a */; };
 		DD2B83511C20648500C02CD2 /* CDObserverProxyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DD2B83501C20648500C02CD2 /* CDObserverProxyTests.m */; };
 		DD2B83541C20655B00C02CD2 /* CDInvocationRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = DD2B83531C20655B00C02CD2 /* CDInvocationRecorder.m */; };
@@ -40,6 +41,7 @@
 /* Begin PBXFileReference section */
 		20F99E7477829A95D59D1411 /* Pods-CrutchKitExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CrutchKitExampleTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CrutchKitExampleTests/Pods-CrutchKitExampleTests.release.xcconfig"; sourceTree = "<group>"; };
 		7DE53511CC88C225046820E1 /* Pods-CrutchKitExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CrutchKitExampleTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CrutchKitExampleTests/Pods-CrutchKitExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9E2F10E41CF0F9E500C0A109 /* UIResponderProxyingTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIResponderProxyingTests.m; sourceTree = "<group>"; };
 		CABFF275B95F10250CFE2119 /* Pods-CrutchKitExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CrutchKitExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-CrutchKitExample/Pods-CrutchKitExample.release.xcconfig"; sourceTree = "<group>"; };
 		DD2B83501C20648500C02CD2 /* CDObserverProxyTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDObserverProxyTests.m; sourceTree = "<group>"; };
 		DD2B83521C20655B00C02CD2 /* CDInvocationRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDInvocationRecorder.h; sourceTree = "<group>"; };
@@ -171,6 +173,7 @@
 			isa = PBXGroup;
 			children = (
 				DD2B83501C20648500C02CD2 /* CDObserverProxyTests.m */,
+				9E2F10E41CF0F9E500C0A109 /* UIResponderProxyingTests.m */,
 				DD70C0A51B1DB68A0096AE1B /* Supporting Files */,
 				DD2B83521C20655B00C02CD2 /* CDInvocationRecorder.h */,
 				DD2B83531C20655B00C02CD2 /* CDInvocationRecorder.m */,
@@ -408,6 +411,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E2F10E51CF0F9E500C0A109 /* UIResponderProxyingTests.m in Sources */,
 				DDB0C69A1C6F46C60016BFFD /* NSException+CDInvocation.m in Sources */,
 				DD2B83541C20655B00C02CD2 /* CDInvocationRecorder.m in Sources */,
 				DDB0C6941C6F427A0016BFFD /* CDInvocationArgument.m in Sources */,

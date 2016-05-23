@@ -12,9 +12,21 @@
 @implementation NSMethodSignature (CDInvocation)
 
 + (instancetype)cd_signatureWithProtocol:(Protocol *)protocol
-                             selector:(SEL)selector {
-    struct objc_method_description description = protocol_getMethodDescription(protocol, selector, NO, YES);
-    return [NSMethodSignature signatureWithObjCTypes:description.types];
+                                selector:(SEL)selector {
+    
+    // checking all methods of a protocol (class methods, instance methods, optional methods, required methods)
+    struct { BOOL isRequired; BOOL isInstance; } opts[4] = { {YES, YES}, {NO, YES}, {YES, NO}, {NO, NO} };
+    for(int i = 0; i < 4; i++)
+    {
+        struct objc_method_description methodDescription = protocol_getMethodDescription(protocol,
+                                                                                         selector,
+                                                                                         opts[i].isRequired,
+                                                                                         opts[i].isInstance);
+        if (methodDescription.name != NULL) {
+            return [NSMethodSignature signatureWithObjCTypes:methodDescription.types];
+        }
+    }
+    return nil;
 }
 
 @end
